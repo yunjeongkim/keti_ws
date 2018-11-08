@@ -1,0 +1,99 @@
+\hypertarget{math__constant_8h}{}\section{/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/utils/math\+\_\+constant.h 파일 참조}
+\label{math__constant_8h}\index{/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/utils/math\+\_\+constant.\+h@{/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/utils/math\+\_\+constant.\+h}}
+{\ttfamily \#include $<$math.\+h$>$}\\*
+math\+\_\+constant.\+h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{math__constant_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{math__constant_8h_a5e195fe2ba1896ebf32b3c92c0995315}{sign} (const T \&x)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{math__constant_8h_a83c0028e8e5f11951b04025d01ffe408}{min} (const T \&x, const T \&y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{math__constant_8h_a0ddaec2f52f526234b051c9dff699a5f}{max} (const T \&x, const T \&y)
+\end{DoxyCompactItemize}
+\subsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{math__constant_8h_a3990c92eaf1a7084542e083950900d47}{D\+E\+G2\+R\+AD} = M\+\_\+\+PI / 180
+\item 
+const double \hyperlink{math__constant_8h_ada7628b7b7ccf0546436b9904cd76cd1}{R\+A\+D2\+D\+EG} = 180. / M\+\_\+\+PI
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\index{math\+\_\+constant.\+h@{math\+\_\+constant.\+h}!max@{max}}
+\index{max@{max}!math\+\_\+constant.\+h@{math\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{max(const T \&x, const T \&y)}{max(const T &x, const T &y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T max (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math__constant_8h_a0ddaec2f52f526234b051c9dff699a5f}{}\label{math__constant_8h_a0ddaec2f52f526234b051c9dff699a5f}
+
+
+math\+\_\+constant.\+h 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+21 \{
+22   \textcolor{keywordflow}{return} (x >= y ? x : y);
+23 \}
+\end{DoxyCode}
+\index{math\+\_\+constant.\+h@{math\+\_\+constant.\+h}!min@{min}}
+\index{min@{min}!math\+\_\+constant.\+h@{math\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{min(const T \&x, const T \&y)}{min(const T &x, const T &y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T min (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x, }
+\item[{const T \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math__constant_8h_a83c0028e8e5f11951b04025d01ffe408}{}\label{math__constant_8h_a83c0028e8e5f11951b04025d01ffe408}
+
+
+math\+\_\+constant.\+h 파일의 14 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+15 \{
+16   \textcolor{keywordflow}{return} (x <= y ? x : y);
+17 \}
+\end{DoxyCode}
+\index{math\+\_\+constant.\+h@{math\+\_\+constant.\+h}!sign@{sign}}
+\index{sign@{sign}!math\+\_\+constant.\+h@{math\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{sign(const T \&x)}{sign(const T &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool sign (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{math__constant_8h_a5e195fe2ba1896ebf32b3c92c0995315}{}\label{math__constant_8h_a5e195fe2ba1896ebf32b3c92c0995315}
+
+
+math\+\_\+constant.\+h 파일의 9 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+9                             \{
+10   \textcolor{keywordflow}{return} (x > 0) ? 1 : ((x < 0) ? -1 : 0);
+11 \}
+\end{DoxyCode}
+
+
+\subsection{변수 문서화}
+\index{math\+\_\+constant.\+h@{math\+\_\+constant.\+h}!D\+E\+G2\+R\+AD@{D\+E\+G2\+R\+AD}}
+\index{D\+E\+G2\+R\+AD@{D\+E\+G2\+R\+AD}!math\+\_\+constant.\+h@{math\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+G2\+R\+AD}{DEG2RAD}}]{\setlength{\rightskip}{0pt plus 5cm}const double D\+E\+G2\+R\+AD = M\+\_\+\+PI / 180}\hypertarget{math__constant_8h_a3990c92eaf1a7084542e083950900d47}{}\label{math__constant_8h_a3990c92eaf1a7084542e083950900d47}
+
+
+math\+\_\+constant.\+h 파일의 5 번째 라인에서 정의되었습니다.
+
+\index{math\+\_\+constant.\+h@{math\+\_\+constant.\+h}!R\+A\+D2\+D\+EG@{R\+A\+D2\+D\+EG}}
+\index{R\+A\+D2\+D\+EG@{R\+A\+D2\+D\+EG}!math\+\_\+constant.\+h@{math\+\_\+constant.\+h}}
+\subsubsection[{\texorpdfstring{R\+A\+D2\+D\+EG}{RAD2DEG}}]{\setlength{\rightskip}{0pt plus 5cm}const double R\+A\+D2\+D\+EG = 180. / M\+\_\+\+PI}\hypertarget{math__constant_8h_ada7628b7b7ccf0546436b9904cd76cd1}{}\label{math__constant_8h_ada7628b7b7ccf0546436b9904cd76cd1}
+
+
+math\+\_\+constant.\+h 파일의 6 번째 라인에서 정의되었습니다.
+

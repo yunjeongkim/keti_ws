@@ -1,0 +1,175 @@
+\hypertarget{class_lane_array_handler}{}\section{Lane\+Array\+Handler 클래스 참조}
+\label{class_lane_array_handler}\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+
+
+The Type\+Conversion class This class is handling lane array information.  
+
+
+
+
+{\ttfamily \#include $<$lanearray\+\_\+handler.\+h$>$}
+
+
+
+Lane\+Array\+Handler에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_lane_array_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lane_array_handler_a5ffda8b0667a0b1060b4efe8d07789e1}{Lane\+Array\+Handler} ()
+\item 
+void \hyperlink{class_lane_array_handler_a345c18674ccfcbf1104bd5b030e04c0b}{set\+Lane\+Array} (const autoware\+\_\+msgs\+::\+Lane\+Array \&lane\+\_\+array)
+\end{DoxyCompactItemize}
+\subsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ $>$ \hyperlink{class_lane_array_handler_a5f6a1e79b64a9092bfad57fd6676432b}{lanes\+\_\+}
+\item 
+autoware\+\_\+msgs\+::\+Lane\+Array \hyperlink{class_lane_array_handler_ab6fec5fc6f51e9b00949766093608b6f}{autoware\+\_\+lanearray\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ $>$ \hyperlink{class_lane_array_handler_a24dff427e3c72bb3a26cdcc44c718044}{convert\+From\+Lane\+Array\+To\+Waypoints\+Vector} (const autoware\+\_\+msgs\+::\+Lane\+Array \&lane\+\_\+array)
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+The Type\+Conversion class This class is handling lane array information. 
+
+lanearray\+\_\+handler.\+h 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\subsubsection[{\texorpdfstring{Lane\+Array\+Handler()}{LaneArrayHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}Lane\+Array\+Handler\+::\+Lane\+Array\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_array_handler_a5ffda8b0667a0b1060b4efe8d07789e1}{}\label{class_lane_array_handler_a5ffda8b0667a0b1060b4efe8d07789e1}
+
+
+lanearray\+\_\+handler.\+cpp 파일의 4 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+5 \{
+6 
+7 \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!convert\+From\+Lane\+Array\+To\+Waypoints\+Vector@{convert\+From\+Lane\+Array\+To\+Waypoints\+Vector}}
+\index{convert\+From\+Lane\+Array\+To\+Waypoints\+Vector@{convert\+From\+Lane\+Array\+To\+Waypoints\+Vector}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\subsubsection[{\texorpdfstring{convert\+From\+Lane\+Array\+To\+Waypoints\+Vector(const autoware\+\_\+msgs\+::\+Lane\+Array \&lane\+\_\+array)}{convertFromLaneArrayToWaypointsVector(const autoware_msgs::LaneArray &lane_array)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ {\bf Way\+Point} $>$ $>$ Lane\+Array\+Handler\+::convert\+From\+Lane\+Array\+To\+Waypoints\+Vector (
+\begin{DoxyParamCaption}
+\item[{const autoware\+\_\+msgs\+::\+Lane\+Array \&}]{lane\+\_\+array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_lane_array_handler_a24dff427e3c72bb3a26cdcc44c718044}{}\label{class_lane_array_handler_a24dff427e3c72bb3a26cdcc44c718044}
+
+
+lanearray\+\_\+handler.\+cpp 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+14 \{
+15   std::vector<std::vector<WayPoint> > paths;
+16   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0 ; i < lane\_array.lanes.size(); i++)
+17   \{
+18     std::vector<WayPoint> path;
+19     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j = 0 ; j < lane\_array.lanes.at(i).waypoints.size(); j++)
+20     \{
+21       \hyperlink{class_way_point}{WayPoint} wp(lane\_array.lanes.at(i).waypoints.at(j).pose.pose.position.x,
+22                   lane\_array.lanes.at(i).waypoints.at(j).pose.pose.position.y,
+23                   lane\_array.lanes.at(i).waypoints.at(j).pose.pose.position.z,
+24                   tf::getYaw(lane\_array.lanes.at(i).waypoints.at(j).pose.pose.orientation));
+25       wp.v\_ = lane\_array.lanes.at(i).waypoints.at(j).twist.twist.linear.x;
+26       path.push\_back(wp);
+27     \}
+28     paths.push\_back(path);
+29   \}
+30   \textcolor{keywordflow}{return} paths;
+31 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_array_handler_a24dff427e3c72bb3a26cdcc44c718044_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!set\+Lane\+Array@{set\+Lane\+Array}}
+\index{set\+Lane\+Array@{set\+Lane\+Array}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\subsubsection[{\texorpdfstring{set\+Lane\+Array(const autoware\+\_\+msgs\+::\+Lane\+Array \&lane\+\_\+array)}{setLaneArray(const autoware_msgs::LaneArray &lane_array)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lane\+Array\+Handler\+::set\+Lane\+Array (
+\begin{DoxyParamCaption}
+\item[{const autoware\+\_\+msgs\+::\+Lane\+Array \&}]{lane\+\_\+array}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_array_handler_a345c18674ccfcbf1104bd5b030e04c0b}{}\label{class_lane_array_handler_a345c18674ccfcbf1104bd5b030e04c0b}
+
+
+lanearray\+\_\+handler.\+cpp 파일의 8 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+9 \{
+10   \hyperlink{class_lane_array_handler_a5f6a1e79b64a9092bfad57fd6676432b}{lanes\_} = \hyperlink{class_lane_array_handler_a24dff427e3c72bb3a26cdcc44c718044}{convertFromLaneArrayToWaypointsVector}(lane\_array);
+11   \hyperlink{class_lane_array_handler_ab6fec5fc6f51e9b00949766093608b6f}{autoware\_lanearray\_} = lane\_array;
+12 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_array_handler_a345c18674ccfcbf1104bd5b030e04c0b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_array_handler_a345c18674ccfcbf1104bd5b030e04c0b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!autoware\+\_\+lanearray\+\_\+@{autoware\+\_\+lanearray\+\_\+}}
+\index{autoware\+\_\+lanearray\+\_\+@{autoware\+\_\+lanearray\+\_\+}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\subsubsection[{\texorpdfstring{autoware\+\_\+lanearray\+\_\+}{autoware_lanearray_}}]{\setlength{\rightskip}{0pt plus 5cm}autoware\+\_\+msgs\+::\+Lane\+Array Lane\+Array\+Handler\+::autoware\+\_\+lanearray\+\_\+}\hypertarget{class_lane_array_handler_ab6fec5fc6f51e9b00949766093608b6f}{}\label{class_lane_array_handler_ab6fec5fc6f51e9b00949766093608b6f}
+
+
+lanearray\+\_\+handler.\+h 파일의 20 번째 라인에서 정의되었습니다.
+
+\index{Lane\+Array\+Handler@{Lane\+Array\+Handler}!lanes\+\_\+@{lanes\+\_\+}}
+\index{lanes\+\_\+@{lanes\+\_\+}!Lane\+Array\+Handler@{Lane\+Array\+Handler}}
+\subsubsection[{\texorpdfstring{lanes\+\_\+}{lanes_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf Way\+Point}$>$ $>$ Lane\+Array\+Handler\+::lanes\+\_\+}\hypertarget{class_lane_array_handler_a5f6a1e79b64a9092bfad57fd6676432b}{}\label{class_lane_array_handler_a5f6a1e79b64a9092bfad57fd6676432b}
+
+
+lanearray\+\_\+handler.\+h 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/data\+\_\+handler/\hyperlink{lanearray__handler_8h}{lanearray\+\_\+handler.\+h}\item 
+/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/src/data\+\_\+handler/\hyperlink{lanearray__handler_8cpp}{lanearray\+\_\+handler.\+cpp}\end{DoxyCompactItemize}

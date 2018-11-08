@@ -1,0 +1,179 @@
+\hypertarget{class_way_point}{}\section{Way\+Point 클래스 참조}
+\label{class_way_point}\index{Way\+Point@{Way\+Point}}
+
+
+type representing class containing (\hyperlink{class_g_p_s_point}{G\+P\+S\+Point}, v)  
+
+
+
+
+{\ttfamily \#include $<$waypoint.\+h$>$}
+
+
+
+Way\+Point에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_way_point__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_way_point_a0388a615719454d38b5a8160d8058550}{Way\+Point} ()
+\item 
+\hyperlink{class_way_point_a0a5358f5f8894bf9bc0279e4758f712d}{Way\+Point} (const double \&x, const double \&y, const double \&z, const double \&a)
+\item 
+\hyperlink{class_way_point_afb55bf3008e6df983912ca195a4994e1}{Way\+Point} (const double \&x, const double \&y, const double \&z, const double \&a, const double \&v)
+\item 
+geometry\+\_\+msgs\+::\+Point \hyperlink{class_way_point_a3d0e6433de5c74a13be5f6f276d0a71d}{get\+Point} ()
+\item 
+double \hyperlink{class_way_point_ad2b8fa2161cb6dfa5d7ff8f993f1c62c}{get\+Distance} (geometry\+\_\+msgs\+::\+Point point)
+\end{DoxyCompactItemize}
+\subsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_p_s_point}{G\+P\+S\+Point} \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\+\_\+}
+\item 
+double \hyperlink{class_way_point_aecad0ca0d0dbb03cf02d92d31e5e99bd}{v\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+type representing class containing (\hyperlink{class_g_p_s_point}{G\+P\+S\+Point}, v) 
+
+waypoint.\+h 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{Way\+Point()}{WayPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}Way\+Point\+::\+Way\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_way_point_a0388a615719454d38b5a8160d8058550}{}\label{class_way_point_a0388a615719454d38b5a8160d8058550}
+
+
+waypoint.\+h 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+16   \{
+17 
+18   \}
+\end{DoxyCode}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{Way\+Point(const double \&x, const double \&y, const double \&z, const double \&a)}{WayPoint(const double &x, const double &y, const double &z, const double &a)}}]{\setlength{\rightskip}{0pt plus 5cm}Way\+Point\+::\+Way\+Point (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{x, }
+\item[{const double \&}]{y, }
+\item[{const double \&}]{z, }
+\item[{const double \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_way_point_a0a5358f5f8894bf9bc0279e4758f712d}{}\label{class_way_point_a0a5358f5f8894bf9bc0279e4758f712d}
+
+
+waypoint.\+h 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+20   \{
+21     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad4b7325afe1ca0fcf8d2ef284ab9b62c}{x\_} = x;
+22     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad41d0e7a93f8766181402ce25af798fe}{y\_} = y;
+23     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_aa6622ef5c0c58fa1b59c1d5b77fe020c}{z\_} = z;
+24     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ac4652d53d65aeb605f7eb35128a5ab90}{a\_} = a;
+25   \}
+\end{DoxyCode}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\index{Way\+Point@{Way\+Point}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{Way\+Point(const double \&x, const double \&y, const double \&z, const double \&a, const double \&v)}{WayPoint(const double &x, const double &y, const double &z, const double &a, const double &v)}}]{\setlength{\rightskip}{0pt plus 5cm}Way\+Point\+::\+Way\+Point (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{x, }
+\item[{const double \&}]{y, }
+\item[{const double \&}]{z, }
+\item[{const double \&}]{a, }
+\item[{const double \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_way_point_afb55bf3008e6df983912ca195a4994e1}{}\label{class_way_point_afb55bf3008e6df983912ca195a4994e1}
+
+
+waypoint.\+h 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+27   \{
+28     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad4b7325afe1ca0fcf8d2ef284ab9b62c}{x\_} = x;
+29     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad41d0e7a93f8766181402ce25af798fe}{y\_} = y;
+30     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_aa6622ef5c0c58fa1b59c1d5b77fe020c}{z\_} = z;
+31     \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ac4652d53d65aeb605f7eb35128a5ab90}{a\_} = a;
+32     \hyperlink{class_way_point_aecad0ca0d0dbb03cf02d92d31e5e99bd}{v\_} = v;
+33   \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\index{Way\+Point@{Way\+Point}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{get\+Distance(geometry\+\_\+msgs\+::\+Point point)}{getDistance(geometry_msgs::Point point)}}]{\setlength{\rightskip}{0pt plus 5cm}double Way\+Point\+::get\+Distance (
+\begin{DoxyParamCaption}
+\item[{geometry\+\_\+msgs\+::\+Point}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_way_point_ad2b8fa2161cb6dfa5d7ff8f993f1c62c}{}\label{class_way_point_ad2b8fa2161cb6dfa5d7ff8f993f1c62c}
+
+
+waypoint.\+h 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+44   \{
+45     \textcolor{keywordflow}{return} sqrt(pow(point.x-\hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad4b7325afe1ca0fcf8d2ef284ab9b62c}{x\_},2)+pow(point.y-\hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad41d0e7a93f8766181402ce25af798fe}{y\_},2)+pow(point.z-
+      \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_aa6622ef5c0c58fa1b59c1d5b77fe020c}{z\_},2));
+46   \}
+\end{DoxyCode}
+\index{Way\+Point@{Way\+Point}!get\+Point@{get\+Point}}
+\index{get\+Point@{get\+Point}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{get\+Point()}{getPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}geometry\+\_\+msgs\+::\+Point Way\+Point\+::get\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_way_point_a3d0e6433de5c74a13be5f6f276d0a71d}{}\label{class_way_point_a3d0e6433de5c74a13be5f6f276d0a71d}
+
+
+waypoint.\+h 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+35   \{
+36     geometry\_msgs::Point pt;
+37     pt.x = \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad4b7325afe1ca0fcf8d2ef284ab9b62c}{x\_};
+38     pt.y = \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_ad41d0e7a93f8766181402ce25af798fe}{y\_};
+39     pt.z = \hyperlink{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{pos\_}.\hyperlink{class_g_p_s_point_aa6622ef5c0c58fa1b59c1d5b77fe020c}{z\_};
+40     \textcolor{keywordflow}{return} pt;
+41   \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{Way\+Point@{Way\+Point}!pos\+\_\+@{pos\+\_\+}}
+\index{pos\+\_\+@{pos\+\_\+}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{pos\+\_\+}{pos_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\+P\+S\+Point} Way\+Point\+::pos\+\_\+}\hypertarget{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}{}\label{class_way_point_aef2ddd64bef263157f27d69e40f1e7e3}
+
+
+waypoint.\+h 파일의 13 번째 라인에서 정의되었습니다.
+
+\index{Way\+Point@{Way\+Point}!v\+\_\+@{v\+\_\+}}
+\index{v\+\_\+@{v\+\_\+}!Way\+Point@{Way\+Point}}
+\subsubsection[{\texorpdfstring{v\+\_\+}{v_}}]{\setlength{\rightskip}{0pt plus 5cm}double Way\+Point\+::v\+\_\+}\hypertarget{class_way_point_aecad0ca0d0dbb03cf02d92d31e5e99bd}{}\label{class_way_point_aecad0ca0d0dbb03cf02d92d31e5e99bd}
+
+
+waypoint.\+h 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/data\+\_\+classes/\hyperlink{waypoint_8h}{waypoint.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="LaneHandler::getClosestWaypoint" name="LaneHandler::getClosestWaypoint">
+<area shape="rect" id="node2" href="$class_pose_point_handler.html#a6d037671a1c93d9d51a7b0e40eacd3fa" title="PosePointHandler::setPose\lPoint" alt="" coords="281,5,463,47"/>
+<area shape="rect" id="node3" href="$class_pose_point_handler.html#a030d4318ea42d398798b675624ebd07b" title="Check whether a point is in the front of the current_pose. " alt="" coords="275,71,469,112"/>
+<area shape="rect" id="node4" href="$class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c" title="PosePointHandler::calcRelative\lCoordinate" alt="" coords="517,71,724,112"/>
+</map>

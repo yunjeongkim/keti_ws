@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>KetiWS: CKetiLocalPlanning 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KetiWS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_c_keti_local_planning.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pro-methods">Protected 멤버 함수</a> &#124;
+<a href="#pro-attribs">Protected 속성</a> &#124;
+<a href="class_c_keti_local_planning-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">CKetiLocalPlanning 클래스 참조<div class="ingroups"><a class="el" href="group___main_group.html">main</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Planning local path avoiding obstacle and following lane.  
+ <a href="class_c_keti_local_planning.html#details">더 자세히 ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a>&gt;</code></p>
+<div class="dynheader">
+CKetiLocalPlanning에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning__coll__graph.png" border="0" usemap="#_c_keti_local_planning_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_keti_local_planning_coll__map" id="_c_keti_local_planning_coll__map">
+<area shape="rect" id="node2" href="class_lane_array_handler.html" title="The TypeConversion class This class is handling lane array information. " alt="" coords="5,5,248,141"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a64e789f070f7334aab7727c0ae276931"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a64e789f070f7334aab7727c0ae276931">CKetiLocalPlanning</a> ()</td></tr>
+<tr class="separator:a64e789f070f7334aab7727c0ae276931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab5b7e3683328d05b50ed802e2fb5cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#adab5b7e3683328d05b50ed802e2fb5cd">~CKetiLocalPlanning</a> ()</td></tr>
+<tr class="separator:adab5b7e3683328d05b50ed802e2fb5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3286318e734e7441036b43cec169978c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a3286318e734e7441036b43cec169978c">PlannerMainLoop</a> ()</td></tr>
+<tr class="separator:a3286318e734e7441036b43cec169978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:a144131de19f37584bab4412f98e1fc63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a144131de19f37584bab4412f98e1fc63">callbackGetCurrentPose</a> (const geometry_msgs::PoseStampedConstPtr &amp;msg)</td></tr>
+<tr class="memdesc:a144131de19f37584bab4412f98e1fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">callbackGetCurrentPose  <a href="#a144131de19f37584bab4412f98e1fc63">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a144131de19f37584bab4412f98e1fc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab385a1021d3d90f9f2b7b5a40dd791c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#ab385a1021d3d90f9f2b7b5a40dd791c2">callbackGetWayPlannerPath</a> (const autoware_msgs::LaneArray &amp;msg)</td></tr>
+<tr class="memdesc:ab385a1021d3d90f9f2b7b5a40dd791c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">callbackGetWayPlannerPath  <a href="#ab385a1021d3d90f9f2b7b5a40dd791c2">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ab385a1021d3d90f9f2b7b5a40dd791c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 속성</h2></td></tr>
+<tr class="memitem:a39a260e89fa7805f6c0c7112c91cb847"><td class="memItemLeft" align="right" valign="top">ros::NodeHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a></td></tr>
+<tr class="separator:a39a260e89fa7805f6c0c7112c91cb847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f394ae6069296e6f412eb5daa9dd3a"><td class="memItemLeft" align="right" valign="top">ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a42f394ae6069296e6f412eb5daa9dd3a">pub_LocalPath</a></td></tr>
+<tr class="separator:a42f394ae6069296e6f412eb5daa9dd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423ed1137dde91f12793bdcacb4e0bea"><td class="memItemLeft" align="right" valign="top">ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a423ed1137dde91f12793bdcacb4e0bea">pub_LocalTrajectoriesRviz</a></td></tr>
+<tr class="separator:a423ed1137dde91f12793bdcacb4e0bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54aec2f11f157100a74b09a9cf5fa38b"><td class="memItemLeft" align="right" valign="top">ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a54aec2f11f157100a74b09a9cf5fa38b">pub_WaypointTrajectoriesRviz</a></td></tr>
+<tr class="separator:a54aec2f11f157100a74b09a9cf5fa38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac399c600a59f7b79448ba1f1bbfda8ca"><td class="memItemLeft" align="right" valign="top">ros::Subscriber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#ac399c600a59f7b79448ba1f1bbfda8ca">sub_current_pose</a></td></tr>
+<tr class="separator:ac399c600a59f7b79448ba1f1bbfda8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e59488889af86a89995f2c606677ce"><td class="memItemLeft" align="right" valign="top">ros::Subscriber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a75e59488889af86a89995f2c606677ce">sub_WayPlannerPaths</a></td></tr>
+<tr class="separator:a75e59488889af86a89995f2c606677ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4dcb94c250fb4d324b33f2fa42ffcb"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Pose&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a4f4dcb94c250fb4d324b33f2fa42ffcb">current_pose_</a></td></tr>
+<tr class="separator:a4f4dcb94c250fb4d324b33f2fa42ffcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6295120665288244397783d747cc60cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_lane_array_handler.html">LaneArrayHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">lanes_handler_</a></td></tr>
+<tr class="separator:a6295120665288244397783d747cc60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>Planning local path avoiding obstacle and following lane. </p>
+<dl class="section author"><dt>작성자</dt><dd>Yunjeong Kim(<a href="#" onclick="location.href='mai'+'lto:'+'dal'+'ld'+'dun'+'gi'+'@na'+'ve'+'r.c'+'om'; return false;">dalld<span style="display: none;">.nosp@m.</span>dung<span style="display: none;">.nosp@m.</span>i@nav<span style="display: none;">.nosp@m.</span>er.c<span style="display: none;">.nosp@m.</span>om</a>)</dd></dl>
+<p>It generates local path consisting of waypoints which follwoing lane while avoiding obstacles. </p>
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00019">19</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="a64e789f070f7334aab7727c0ae276931"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CKetiLocalPlanning::CKetiLocalPlanning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a> 파일의 <a class="el" href="cketilocalplanning_8cpp_source.html#l00007">7</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="comment">// Publisher</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a42f394ae6069296e6f412eb5daa9dd3a">pub_LocalPath</a> = <a class="code" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a>.advertise&lt;autoware_msgs::lane&gt;( <span class="stringliteral">&quot;/final_waypoints&quot;</span>, 100,<span class="keyword">true</span>);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a423ed1137dde91f12793bdcacb4e0bea">pub_LocalTrajectoriesRviz</a> = <a class="code" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a>.advertise&lt;visualization_msgs::MarkerArray&gt;(<span class="stringliteral">&quot;local_trajectories&quot;</span>, 1);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a54aec2f11f157100a74b09a9cf5fa38b">pub_WaypointTrajectoriesRviz</a> = <a class="code" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a>.advertise&lt;visualization_msgs::MarkerArray&gt;(<span class="stringliteral">&quot;waypoint_trajectories&quot;</span>, 1);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="comment">// Subscriber</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#ac399c600a59f7b79448ba1f1bbfda8ca">sub_current_pose</a>  = <a class="code" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a>.subscribe(<span class="stringliteral">&quot;/current_pose&quot;</span>,             1,      &amp;<a class="code" href="class_c_keti_local_planning.html#a144131de19f37584bab4412f98e1fc63">CKetiLocalPlanning::callbackGetCurrentPose</a>,        <span class="keyword">this</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a75e59488889af86a89995f2c606677ce">sub_WayPlannerPaths</a> = <a class="code" href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">nh</a>.subscribe(<span class="stringliteral">&quot;/lane_waypoints_array&quot;</span>,   1,      &amp;<a class="code" href="class_c_keti_local_planning.html#ab385a1021d3d90f9f2b7b5a40dd791c2">CKetiLocalPlanning::callbackGetWayPlannerPath</a>,     <span class="keyword">this</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// Initialize Variable</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="class_c_keti_local_planning_html_a39a260e89fa7805f6c0c7112c91cb847"><div class="ttname"><a href="class_c_keti_local_planning.html#a39a260e89fa7805f6c0c7112c91cb847">CKetiLocalPlanning::nh</a></div><div class="ttdeci">ros::NodeHandle nh</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00022">cketilocalplanning.h:22</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a144131de19f37584bab4412f98e1fc63"><div class="ttname"><a href="class_c_keti_local_planning.html#a144131de19f37584bab4412f98e1fc63">CKetiLocalPlanning::callbackGetCurrentPose</a></div><div class="ttdeci">void callbackGetCurrentPose(const geometry_msgs::PoseStampedConstPtr &amp;msg)</div><div class="ttdoc">callbackGetCurrentPose </div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8cpp_source.html#l00028">cketilocalplanning.cpp:28</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a42f394ae6069296e6f412eb5daa9dd3a"><div class="ttname"><a href="class_c_keti_local_planning.html#a42f394ae6069296e6f412eb5daa9dd3a">CKetiLocalPlanning::pub_LocalPath</a></div><div class="ttdeci">ros::Publisher pub_LocalPath</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00023">cketilocalplanning.h:23</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a75e59488889af86a89995f2c606677ce"><div class="ttname"><a href="class_c_keti_local_planning.html#a75e59488889af86a89995f2c606677ce">CKetiLocalPlanning::sub_WayPlannerPaths</a></div><div class="ttdeci">ros::Subscriber sub_WayPlannerPaths</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00027">cketilocalplanning.h:27</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_ac399c600a59f7b79448ba1f1bbfda8ca"><div class="ttname"><a href="class_c_keti_local_planning.html#ac399c600a59f7b79448ba1f1bbfda8ca">CKetiLocalPlanning::sub_current_pose</a></div><div class="ttdeci">ros::Subscriber sub_current_pose</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00026">cketilocalplanning.h:26</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_ab385a1021d3d90f9f2b7b5a40dd791c2"><div class="ttname"><a href="class_c_keti_local_planning.html#ab385a1021d3d90f9f2b7b5a40dd791c2">CKetiLocalPlanning::callbackGetWayPlannerPath</a></div><div class="ttdeci">void callbackGetWayPlannerPath(const autoware_msgs::LaneArray &amp;msg)</div><div class="ttdoc">callbackGetWayPlannerPath </div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8cpp_source.html#l00033">cketilocalplanning.cpp:33</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a423ed1137dde91f12793bdcacb4e0bea"><div class="ttname"><a href="class_c_keti_local_planning.html#a423ed1137dde91f12793bdcacb4e0bea">CKetiLocalPlanning::pub_LocalTrajectoriesRviz</a></div><div class="ttdeci">ros::Publisher pub_LocalTrajectoriesRviz</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00024">cketilocalplanning.h:24</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a54aec2f11f157100a74b09a9cf5fa38b"><div class="ttname"><a href="class_c_keti_local_planning.html#a54aec2f11f157100a74b09a9cf5fa38b">CKetiLocalPlanning::pub_WaypointTrajectoriesRviz</a></div><div class="ttdeci">ros::Publisher pub_WaypointTrajectoriesRviz</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00025">cketilocalplanning.h:25</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_a64e789f070f7334aab7727c0ae276931_cgraph.png" border="0" usemap="#class_c_keti_local_planning_a64e789f070f7334aab7727c0ae276931_cgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_a64e789f070f7334aab7727c0ae276931_cgraph" id="class_c_keti_local_planning_a64e789f070f7334aab7727c0ae276931_cgraph">
+<area shape="rect" id="node2" href="class_c_keti_local_planning.html#a144131de19f37584bab4412f98e1fc63" title="callbackGetCurrentPose " alt="" coords="210,5,382,47"/>
+<area shape="rect" id="node3" href="class_c_keti_local_planning.html#ab385a1021d3d90f9f2b7b5a40dd791c2" title="callbackGetWayPlannerPath " alt="" coords="197,71,395,112"/>
+<area shape="rect" id="node4" href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b" title="LaneArrayHandler::setLane\lArray" alt="" coords="443,71,623,112"/>
+<area shape="rect" id="node5" href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044" title="LaneArrayHandler::convert\lFromLaneArrayToWaypointsVector" alt="" coords="671,71,897,112"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adab5b7e3683328d05b50ed802e2fb5cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CKetiLocalPlanning::~CKetiLocalPlanning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a> 파일의 <a class="el" href="cketilocalplanning_8cpp_source.html#l00022">22</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a class="anchor" id="a144131de19f37584bab4412f98e1fc63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKetiLocalPlanning::callbackGetCurrentPose </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::PoseStampedConstPtr &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callbackGetCurrentPose </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">geometry_msgs::PoseStampedConstPtr</td><td>/current_pose </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a> 파일의 <a class="el" href="cketilocalplanning_8cpp_source.html#l00028">28</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a4f4dcb94c250fb4d324b33f2fa42ffcb">current_pose_</a> = msg-&gt;pose;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="ttc" id="class_c_keti_local_planning_html_a4f4dcb94c250fb4d324b33f2fa42ffcb"><div class="ttname"><a href="class_c_keti_local_planning.html#a4f4dcb94c250fb4d324b33f2fa42ffcb">CKetiLocalPlanning::current_pose_</a></div><div class="ttdeci">geometry_msgs::Pose current_pose_</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00029">cketilocalplanning.h:29</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_a144131de19f37584bab4412f98e1fc63_icgraph.png" border="0" usemap="#class_c_keti_local_planning_a144131de19f37584bab4412f98e1fc63_icgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_a144131de19f37584bab4412f98e1fc63_icgraph" id="class_c_keti_local_planning_a144131de19f37584bab4412f98e1fc63_icgraph">
+<area shape="rect" id="node2" href="class_c_keti_local_planning.html#a64e789f070f7334aab7727c0ae276931" title="CKetiLocalPlanning\l::CKetiLocalPlanning" alt="" coords="225,5,369,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab385a1021d3d90f9f2b7b5a40dd791c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKetiLocalPlanning::callbackGetWayPlannerPath </td>
+          <td>(</td>
+          <td class="paramtype">const autoware_msgs::LaneArray &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callbackGetWayPlannerPath </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autoware_msgs::LaneArrayConstPtr</td><td>/lane_waypoints_Array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a> 파일의 <a class="el" href="cketilocalplanning_8cpp_source.html#l00033">33</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">lanes_handler_</a>.<a class="code" href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b">setLaneArray</a>(msg);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="ttc" id="class_c_keti_local_planning_html_a6295120665288244397783d747cc60cf"><div class="ttname"><a href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">CKetiLocalPlanning::lanes_handler_</a></div><div class="ttdeci">LaneArrayHandler lanes_handler_</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00030">cketilocalplanning.h:30</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a345c18674ccfcbf1104bd5b030e04c0b"><div class="ttname"><a href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b">LaneArrayHandler::setLaneArray</a></div><div class="ttdeci">void setLaneArray(const autoware_msgs::LaneArray &amp;lane_array)</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8cpp_source.html#l00008">lanearray_handler.cpp:8</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_cgraph.png" border="0" usemap="#class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_cgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_cgraph" id="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_cgraph">
+<area shape="rect" id="node2" href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b" title="LaneArrayHandler::setLane\lArray" alt="" coords="251,5,431,47"/>
+<area shape="rect" id="node3" href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044" title="LaneArrayHandler::convert\lFromLaneArrayToWaypointsVector" alt="" coords="479,5,705,47"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_icgraph.png" border="0" usemap="#class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_icgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_icgraph" id="class_c_keti_local_planning_ab385a1021d3d90f9f2b7b5a40dd791c2_icgraph">
+<area shape="rect" id="node2" href="class_c_keti_local_planning.html#a64e789f070f7334aab7727c0ae276931" title="CKetiLocalPlanning\l::CKetiLocalPlanning" alt="" coords="251,5,395,47"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3286318e734e7441036b43cec169978c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CKetiLocalPlanning::PlannerMainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a> 파일의 <a class="el" href="cketilocalplanning_8cpp_source.html#l00038">38</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ros::Rate loop_rate(100);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_lane_handler.html">LaneHandler</a> lane_handler;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">while</span> (ros::ok())</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">lanes_handler_</a>.<a class="code" href="class_lane_array_handler.html#ab6fec5fc6f51e9b00949766093608b6f">autoware_lanearray_</a>.lanes.empty())</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      lane_handler.<a class="code" href="class_lane_handler.html#a6c4cc7f5ae19a81cd24ba1427b0afb74">setLane</a>(<a class="code" href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">lanes_handler_</a>.<a class="code" href="class_lane_array_handler.html#ab6fec5fc6f51e9b00949766093608b6f">autoware_lanearray_</a>.lanes.at(1));</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    ros::spinOnce();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> closest_waypoint_number = lane_handler.<a class="code" href="class_lane_handler.html#a71033c4e67c07e09c2c3c18fabfb7463">getClosestWaypoint</a>(<a class="code" href="class_c_keti_local_planning.html#a4f4dcb94c250fb4d324b33f2fa42ffcb">current_pose_</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(closest_waypoint_number == -1){</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// out_waypoints: local trajectory to be generated.</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// out_trajectory: local trajectory to be published</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Temperal Work: Generate local trajectory from 20 waypoints from the closest waypoint</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::vector&lt;WayPoint&gt; out_waypoints;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    autoware_msgs::lane out_trajectory;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span>(lane_handler.<a class="code" href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">waypoints_lane_</a>.size()-closest_waypoint_number&gt;20){</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      out_waypoints.insert(out_waypoints.begin(),</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                           lane_handler.<a class="code" href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">waypoints_lane_</a>.begin()+closest_waypoint_number,</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                           lane_handler.<a class="code" href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">waypoints_lane_</a>.begin()+closest_waypoint_number+20);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      out_waypoints.insert(out_waypoints.begin(),</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                           lane_handler.<a class="code" href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">waypoints_lane_</a>.begin()+closest_waypoint_number,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                           lane_handler.<a class="code" href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">waypoints_lane_</a>.end());</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_lane_handler.html">LaneHandler</a> out_lane_handler(out_waypoints);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_c_keti_local_planning.html#a42f394ae6069296e6f412eb5daa9dd3a">pub_LocalPath</a>.publish(out_lane_handler.getAutowareLane());</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//Visualization for local path</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    visualization_msgs::MarkerArray local_marker;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_ros_helpers.html#a00357e856ae16110fd9f3787cc3802d3">RosHelpers::ConvertFromLocalPlannerHToAutowareVisualizePathFormat</a>(out_waypoints,local_marker);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_c_keti_local_planning.html#a423ed1137dde91f12793bdcacb4e0bea">pub_LocalTrajectoriesRviz</a>.publish(local_marker);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Visualization for global path</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    visualization_msgs::MarkerArray waypoint_marker;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_ros_helpers.html#ad82466a16ba11fded30d109a52b75074">RosHelpers::ConvertFromPlannerHToAutowareVisualizePathFormat</a>(<a class="code" href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">lanes_handler_</a>.<a class="code" href="class_lane_array_handler.html#a5f6a1e79b64a9092bfad57fd6676432b">lanes_</a>,waypoint_marker);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_c_keti_local_planning.html#a54aec2f11f157100a74b09a9cf5fa38b">pub_WaypointTrajectoriesRviz</a>.publish(waypoint_marker);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    loop_rate.sleep();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div><div class="ttc" id="class_c_keti_local_planning_html_a42f394ae6069296e6f412eb5daa9dd3a"><div class="ttname"><a href="class_c_keti_local_planning.html#a42f394ae6069296e6f412eb5daa9dd3a">CKetiLocalPlanning::pub_LocalPath</a></div><div class="ttdeci">ros::Publisher pub_LocalPath</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00023">cketilocalplanning.h:23</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a6295120665288244397783d747cc60cf"><div class="ttname"><a href="class_c_keti_local_planning.html#a6295120665288244397783d747cc60cf">CKetiLocalPlanning::lanes_handler_</a></div><div class="ttdeci">LaneArrayHandler lanes_handler_</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00030">cketilocalplanning.h:30</a></div></div>
+<div class="ttc" id="class_lane_handler_html_a6c4cc7f5ae19a81cd24ba1427b0afb74"><div class="ttname"><a href="class_lane_handler.html#a6c4cc7f5ae19a81cd24ba1427b0afb74">LaneHandler::setLane</a></div><div class="ttdeci">void setLane(const autoware_msgs::lane &amp;lane)</div><div class="ttdef"><b>Definition:</b> <a href="lane__handler_8cpp_source.html#l00023">lane_handler.cpp:23</a></div></div>
+<div class="ttc" id="class_lane_handler_html_ac65a0139b3900a7c8dc3fe49d7a684f3"><div class="ttname"><a href="class_lane_handler.html#ac65a0139b3900a7c8dc3fe49d7a684f3">LaneHandler::waypoints_lane_</a></div><div class="ttdeci">std::vector&lt; WayPoint &gt; waypoints_lane_</div><div class="ttdef"><b>Definition:</b> <a href="lane__handler_8h_source.html#l00016">lane_handler.h:16</a></div></div>
+<div class="ttc" id="class_lane_handler_html"><div class="ttname"><a href="class_lane_handler.html">LaneHandler</a></div><div class="ttdoc">This class treats lane information with autowar_msgs::lane and std::vector&lt;WayPoint&gt; ...</div><div class="ttdef"><b>Definition:</b> <a href="lane__handler_8h_source.html#l00012">lane_handler.h:12</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a5f6a1e79b64a9092bfad57fd6676432b"><div class="ttname"><a href="class_lane_array_handler.html#a5f6a1e79b64a9092bfad57fd6676432b">LaneArrayHandler::lanes_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; WayPoint &gt; &gt; lanes_</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8h_source.html#l00019">lanearray_handler.h:19</a></div></div>
+<div class="ttc" id="class_lane_handler_html_a71033c4e67c07e09c2c3c18fabfb7463"><div class="ttname"><a href="class_lane_handler.html#a71033c4e67c07e09c2c3c18fabfb7463">LaneHandler::getClosestWaypoint</a></div><div class="ttdeci">int getClosestWaypoint(const geometry_msgs::Pose &amp;wp)</div><div class="ttdoc">Find a point on the lane which is the closest point to the WayPoint. </div><div class="ttdef"><b>Definition:</b> <a href="lane__handler_8cpp_source.html#l00077">lane_handler.cpp:77</a></div></div>
+<div class="ttc" id="class_ros_helpers_html_a00357e856ae16110fd9f3787cc3802d3"><div class="ttname"><a href="class_ros_helpers.html#a00357e856ae16110fd9f3787cc3802d3">RosHelpers::ConvertFromLocalPlannerHToAutowareVisualizePathFormat</a></div><div class="ttdeci">static void ConvertFromLocalPlannerHToAutowareVisualizePathFormat(const std::vector&lt; WayPoint &gt; &amp;paths, visualization_msgs::MarkerArray &amp;markerArray)</div><div class="ttdef"><b>Definition:</b> <a href="ros__helpers_8cpp_source.html#l00094">ros_helpers.cpp:94</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_ab6fec5fc6f51e9b00949766093608b6f"><div class="ttname"><a href="class_lane_array_handler.html#ab6fec5fc6f51e9b00949766093608b6f">LaneArrayHandler::autoware_lanearray_</a></div><div class="ttdeci">autoware_msgs::LaneArray autoware_lanearray_</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8h_source.html#l00020">lanearray_handler.h:20</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a4f4dcb94c250fb4d324b33f2fa42ffcb"><div class="ttname"><a href="class_c_keti_local_planning.html#a4f4dcb94c250fb4d324b33f2fa42ffcb">CKetiLocalPlanning::current_pose_</a></div><div class="ttdeci">geometry_msgs::Pose current_pose_</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00029">cketilocalplanning.h:29</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a423ed1137dde91f12793bdcacb4e0bea"><div class="ttname"><a href="class_c_keti_local_planning.html#a423ed1137dde91f12793bdcacb4e0bea">CKetiLocalPlanning::pub_LocalTrajectoriesRviz</a></div><div class="ttdeci">ros::Publisher pub_LocalTrajectoriesRviz</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00024">cketilocalplanning.h:24</a></div></div>
+<div class="ttc" id="class_ros_helpers_html_ad82466a16ba11fded30d109a52b75074"><div class="ttname"><a href="class_ros_helpers.html#ad82466a16ba11fded30d109a52b75074">RosHelpers::ConvertFromPlannerHToAutowareVisualizePathFormat</a></div><div class="ttdeci">static void ConvertFromPlannerHToAutowareVisualizePathFormat(const std::vector&lt; std::vector&lt; WayPoint &gt; &gt; &amp;globalPaths, visualization_msgs::MarkerArray &amp;markerArray)</div><div class="ttdef"><b>Definition:</b> <a href="ros__helpers_8cpp_source.html#l00011">ros_helpers.cpp:11</a></div></div>
+<div class="ttc" id="class_c_keti_local_planning_html_a54aec2f11f157100a74b09a9cf5fa38b"><div class="ttname"><a href="class_c_keti_local_planning.html#a54aec2f11f157100a74b09a9cf5fa38b">CKetiLocalPlanning::pub_WaypointTrajectoriesRviz</a></div><div class="ttdeci">ros::Publisher pub_WaypointTrajectoriesRviz</div><div class="ttdef"><b>Definition:</b> <a href="cketilocalplanning_8h_source.html#l00025">cketilocalplanning.h:25</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_cgraph.png" border="0" usemap="#class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_cgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_cgraph" id="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_cgraph">
+<area shape="rect" id="node2" href="class_lane_handler.html#a6c4cc7f5ae19a81cd24ba1427b0afb74" title="LaneHandler::setLane" alt="" coords="228,21,377,47"/>
+<area shape="rect" id="node4" href="class_lane_handler.html#a71033c4e67c07e09c2c3c18fabfb7463" title="Find a point on the lane which is the closest point to the WayPoint. " alt="" coords="192,78,413,105"/>
+<area shape="rect" id="node8" href="class_lane_handler.html#a9d66775c597130ccbd369d50c7572c2e" title="LaneHandler::getAutowareLane" alt="" coords="201,129,405,155"/>
+<area shape="rect" id="node9" href="class_ros_helpers.html#a00357e856ae16110fd9f3787cc3802d3" title="RosHelpers::ConvertFromLocal\lPlannerHToAutowareVisualizePath\lFormat" alt="" coords="189,179,416,235"/>
+<area shape="rect" id="node10" href="class_ros_helpers.html#ad82466a16ba11fded30d109a52b75074" title="RosHelpers::ConvertFromPlanner\lHToAutowareVisualizePathFormat" alt="" coords="191,259,414,300"/>
+<area shape="rect" id="node3" href="class_lane_handler.html#a48d47e25edd09df1aa859904bd68c8f1" title="LaneHandler::convertFrom\lLaneToWaypoints" alt="" coords="473,5,649,47"/>
+<area shape="rect" id="node5" href="class_pose_point_handler.html#a6d037671a1c93d9d51a7b0e40eacd3fa" title="PosePointHandler::setPose\lPoint" alt="" coords="470,71,653,112"/>
+<area shape="rect" id="node6" href="class_pose_point_handler.html#a030d4318ea42d398798b675624ebd07b" title="Check whether a point is in the front of the current_pose. " alt="" coords="464,136,659,177"/>
+<area shape="rect" id="node7" href="class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c" title="PosePointHandler::calcRelative\lCoordinate" alt="" coords="707,136,913,177"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_icgraph.png" border="0" usemap="#class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_icgraph" alt=""/></div>
+<map name="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_icgraph" id="class_c_keti_local_planning_a3286318e734e7441036b43cec169978c_icgraph">
+<area shape="rect" id="node2" href="ketilocalplanning__main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="189,13,240,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이타 문서화</h2>
+<a class="anchor" id="a4f4dcb94c250fb4d324b33f2fa42ffcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">geometry_msgs::Pose CKetiLocalPlanning::current_pose_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00029">29</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6295120665288244397783d747cc60cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_lane_array_handler.html">LaneArrayHandler</a> CKetiLocalPlanning::lanes_handler_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00030">30</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39a260e89fa7805f6c0c7112c91cb847"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::NodeHandle CKetiLocalPlanning::nh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00022">22</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42f394ae6069296e6f412eb5daa9dd3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::Publisher CKetiLocalPlanning::pub_LocalPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00023">23</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a423ed1137dde91f12793bdcacb4e0bea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::Publisher CKetiLocalPlanning::pub_LocalTrajectoriesRviz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00024">24</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54aec2f11f157100a74b09a9cf5fa38b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::Publisher CKetiLocalPlanning::pub_WaypointTrajectoriesRviz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00025">25</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac399c600a59f7b79448ba1f1bbfda8ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::Subscriber CKetiLocalPlanning::sub_current_pose</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00026">26</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75e59488889af86a89995f2c606677ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ros::Subscriber CKetiLocalPlanning::sub_WayPlannerPaths</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a> 파일의 <a class="el" href="cketilocalplanning_8h_source.html#l00027">27</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:<ul>
+<li>/home/dallddungi/keti_ws/src/keti_local_planning/include/<a class="el" href="cketilocalplanning_8h_source.html">cketilocalplanning.h</a></li>
+<li>/home/dallddungi/keti_ws/src/keti_local_planning/src/<a class="el" href="cketilocalplanning_8cpp_source.html">cketilocalplanning.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_c_keti_local_planning.html">CKetiLocalPlanning</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

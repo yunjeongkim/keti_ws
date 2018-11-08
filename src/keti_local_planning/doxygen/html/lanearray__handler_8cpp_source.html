@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>KetiWS: /home/dallddungi/keti_ws/src/keti_local_planning/src/data_handler/lanearray_handler.cpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KetiWS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lanearray__handler_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lanearray_handler.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lanearray__handler_8cpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lanearray__handler_8h.html">data_handler/lanearray_handler.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;tf/tf.h&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_lane_array_handler.html#a5ffda8b0667a0b1060b4efe8d07789e1">    4</a></span>&#160;<a class="code" href="class_lane_array_handler.html#a5ffda8b0667a0b1060b4efe8d07789e1">LaneArrayHandler::LaneArrayHandler</a>()</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b">LaneArrayHandler::setLaneArray</a>(<span class="keyword">const</span> autoware_msgs::LaneArray&amp; lane_array)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_lane_array_handler.html#a5f6a1e79b64a9092bfad57fd6676432b">lanes_</a> = <a class="code" href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044">convertFromLaneArrayToWaypointsVector</a>(lane_array);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_lane_array_handler.html#ab6fec5fc6f51e9b00949766093608b6f">autoware_lanearray_</a> = lane_array;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044">   13</a></span>&#160;std::vector&lt;std::vector&lt;WayPoint&gt; &gt; <a class="code" href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044">LaneArrayHandler::convertFromLaneArrayToWaypointsVector</a>(<span class="keyword">const</span> autoware_msgs::LaneArray&amp; lane_array)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  std::vector&lt;std::vector&lt;WayPoint&gt; &gt; paths;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0 ; i &lt; lane_array.lanes.size(); i++)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;WayPoint&gt; path;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0 ; j &lt; lane_array.lanes.at(i).waypoints.size(); j++)</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="class_way_point.html">WayPoint</a> wp(lane_array.lanes.at(i).waypoints.at(j).pose.pose.position.x,</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                  lane_array.lanes.at(i).waypoints.at(j).pose.pose.position.y,</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                  lane_array.lanes.at(i).waypoints.at(j).pose.pose.position.z,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                  tf::getYaw(lane_array.lanes.at(i).waypoints.at(j).pose.pose.orientation));</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      wp.<a class="code" href="class_way_point.html#aecad0ca0d0dbb03cf02d92d31e5e99bd">v_</a> = lane_array.lanes.at(i).waypoints.at(j).twist.twist.linear.x;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      path.push_back(wp);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    paths.push_back(path);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> paths;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="ttc" id="class_way_point_html_aecad0ca0d0dbb03cf02d92d31e5e99bd"><div class="ttname"><a href="class_way_point.html#aecad0ca0d0dbb03cf02d92d31e5e99bd">WayPoint::v_</a></div><div class="ttdeci">double v_</div><div class="ttdef"><b>Definition:</b> <a href="waypoint_8h_source.html#l00014">waypoint.h:14</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a345c18674ccfcbf1104bd5b030e04c0b"><div class="ttname"><a href="class_lane_array_handler.html#a345c18674ccfcbf1104bd5b030e04c0b">LaneArrayHandler::setLaneArray</a></div><div class="ttdeci">void setLaneArray(const autoware_msgs::LaneArray &amp;lane_array)</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8cpp_source.html#l00008">lanearray_handler.cpp:8</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a24dff427e3c72bb3a26cdcc44c718044"><div class="ttname"><a href="class_lane_array_handler.html#a24dff427e3c72bb3a26cdcc44c718044">LaneArrayHandler::convertFromLaneArrayToWaypointsVector</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; WayPoint &gt; &gt; convertFromLaneArrayToWaypointsVector(const autoware_msgs::LaneArray &amp;lane_array)</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8cpp_source.html#l00013">lanearray_handler.cpp:13</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a5f6a1e79b64a9092bfad57fd6676432b"><div class="ttname"><a href="class_lane_array_handler.html#a5f6a1e79b64a9092bfad57fd6676432b">LaneArrayHandler::lanes_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; WayPoint &gt; &gt; lanes_</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8h_source.html#l00019">lanearray_handler.h:19</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_ab6fec5fc6f51e9b00949766093608b6f"><div class="ttname"><a href="class_lane_array_handler.html#ab6fec5fc6f51e9b00949766093608b6f">LaneArrayHandler::autoware_lanearray_</a></div><div class="ttdeci">autoware_msgs::LaneArray autoware_lanearray_</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8h_source.html#l00020">lanearray_handler.h:20</a></div></div>
+<div class="ttc" id="lanearray__handler_8h_html"><div class="ttname"><a href="lanearray__handler_8h.html">lanearray_handler.h</a></div></div>
+<div class="ttc" id="class_lane_array_handler_html_a5ffda8b0667a0b1060b4efe8d07789e1"><div class="ttname"><a href="class_lane_array_handler.html#a5ffda8b0667a0b1060b4efe8d07789e1">LaneArrayHandler::LaneArrayHandler</a></div><div class="ttdeci">LaneArrayHandler()</div><div class="ttdef"><b>Definition:</b> <a href="lanearray__handler_8cpp_source.html#l00004">lanearray_handler.cpp:4</a></div></div>
+<div class="ttc" id="class_way_point_html"><div class="ttname"><a href="class_way_point.html">WayPoint</a></div><div class="ttdoc">type representing class containing (GPSPoint, v) </div><div class="ttdef"><b>Definition:</b> <a href="waypoint_8h_source.html#l00010">waypoint.h:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9b44a31e3a7be62c06504fa932748c2c.html">dallddungi</a></li><li class="navelem"><a class="el" href="dir_574c0012f29f11d3d2bdc04c61706132.html">keti_ws</a></li><li class="navelem"><a class="el" href="dir_86354cf238a0f5740adb6609c2b60ceb.html">src</a></li><li class="navelem"><a class="el" href="dir_2c3e257763e38d3e5c142932dfa39fb7.html">keti_local_planning</a></li><li class="navelem"><a class="el" href="dir_a629cd0bb975642a6b0594a79ffd1ec4.html">src</a></li><li class="navelem"><a class="el" href="dir_0abe52c218ff64b9cf46e7b2c01d7756.html">data_handler</a></li><li class="navelem"><a class="el" href="lanearray__handler_8cpp.html">lanearray_handler.cpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

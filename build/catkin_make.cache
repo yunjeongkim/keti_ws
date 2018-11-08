@@ -1,0 +1,2 @@
+autoware_msgs:keti_local_planning
+-G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/dallddungi/keti_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dallddungi/keti_ws/install

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>KetiWS: /home/dallddungi/keti_ws/src/keti_local_planning/include/data_classes/gpspoint.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KetiWS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('gpspoint_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">gpspoint.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gpspoint_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GPSPOINT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GPSPOINT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;geometry_msgs/Point.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_p_s_point.html">GPSPoint</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#ad4b7325afe1ca0fcf8d2ef284ab9b62c">   13</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_g_p_s_point.html#ad4b7325afe1ca0fcf8d2ef284ab9b62c">x_</a>;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#ad41d0e7a93f8766181402ce25af798fe">   14</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_g_p_s_point.html#ad41d0e7a93f8766181402ce25af798fe">y_</a>;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#aa6622ef5c0c58fa1b59c1d5b77fe020c">   15</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_g_p_s_point.html#aa6622ef5c0c58fa1b59c1d5b77fe020c">z_</a>;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#ac4652d53d65aeb605f7eb35128a5ab90">   16</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_g_p_s_point.html#ac4652d53d65aeb605f7eb35128a5ab90">a_</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#a7a635f12f124e516210755b0974ee1d4">   18</a></span>&#160;  <a class="code" href="class_g_p_s_point.html#a7a635f12f124e516210755b0974ee1d4">GPSPoint</a>()</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    x_ = 0;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    y_ = 0;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    z_ = 0;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    a_ = 0;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#aab0d3a5aaee6586b615f55a82c17a10d">   26</a></span>&#160;  <a class="code" href="class_g_p_s_point.html#aab0d3a5aaee6586b615f55a82c17a10d">GPSPoint</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; x, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; y, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; z, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;x_ = x;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;y_ = y;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;z_ = z;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;a_ = a;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_g_p_s_point.html#aa02789544161ef0bcc40a24972f1b365">   35</a></span>&#160;  geometry_msgs::Point <a class="code" href="class_g_p_s_point.html#aa02789544161ef0bcc40a24972f1b365">getPoint</a>()</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    geometry_msgs::Point pt;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    pt.x = <a class="code" href="class_g_p_s_point.html#ad4b7325afe1ca0fcf8d2ef284ab9b62c">x_</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    pt.y = <a class="code" href="class_g_p_s_point.html#ad41d0e7a93f8766181402ce25af798fe">y_</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    pt.z = <a class="code" href="class_g_p_s_point.html#aa6622ef5c0c58fa1b59c1d5b77fe020c">z_</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> pt;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // GPSPOINT_H</span></div><div class="ttc" id="class_g_p_s_point_html_aa02789544161ef0bcc40a24972f1b365"><div class="ttname"><a href="class_g_p_s_point.html#aa02789544161ef0bcc40a24972f1b365">GPSPoint::getPoint</a></div><div class="ttdeci">geometry_msgs::Point getPoint()</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00035">gpspoint.h:35</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_aa6622ef5c0c58fa1b59c1d5b77fe020c"><div class="ttname"><a href="class_g_p_s_point.html#aa6622ef5c0c58fa1b59c1d5b77fe020c">GPSPoint::z_</a></div><div class="ttdeci">double z_</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00015">gpspoint.h:15</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_ad4b7325afe1ca0fcf8d2ef284ab9b62c"><div class="ttname"><a href="class_g_p_s_point.html#ad4b7325afe1ca0fcf8d2ef284ab9b62c">GPSPoint::x_</a></div><div class="ttdeci">double x_</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00013">gpspoint.h:13</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_aab0d3a5aaee6586b615f55a82c17a10d"><div class="ttname"><a href="class_g_p_s_point.html#aab0d3a5aaee6586b615f55a82c17a10d">GPSPoint::GPSPoint</a></div><div class="ttdeci">GPSPoint(const double &amp;x, const double &amp;y, const double &amp;z, const double &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00026">gpspoint.h:26</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_ac4652d53d65aeb605f7eb35128a5ab90"><div class="ttname"><a href="class_g_p_s_point.html#ac4652d53d65aeb605f7eb35128a5ab90">GPSPoint::a_</a></div><div class="ttdeci">double a_</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00016">gpspoint.h:16</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_ad41d0e7a93f8766181402ce25af798fe"><div class="ttname"><a href="class_g_p_s_point.html#ad41d0e7a93f8766181402ce25af798fe">GPSPoint::y_</a></div><div class="ttdeci">double y_</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00014">gpspoint.h:14</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html_a7a635f12f124e516210755b0974ee1d4"><div class="ttname"><a href="class_g_p_s_point.html#a7a635f12f124e516210755b0974ee1d4">GPSPoint::GPSPoint</a></div><div class="ttdeci">GPSPoint()</div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00018">gpspoint.h:18</a></div></div>
+<div class="ttc" id="class_g_p_s_point_html"><div class="ttname"><a href="class_g_p_s_point.html">GPSPoint</a></div><div class="ttdoc">type representing class containing (x,y,z,a) </div><div class="ttdef"><b>Definition:</b> <a href="gpspoint_8h_source.html#l00010">gpspoint.h:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9b44a31e3a7be62c06504fa932748c2c.html">dallddungi</a></li><li class="navelem"><a class="el" href="dir_574c0012f29f11d3d2bdc04c61706132.html">keti_ws</a></li><li class="navelem"><a class="el" href="dir_86354cf238a0f5740adb6609c2b60ceb.html">src</a></li><li class="navelem"><a class="el" href="dir_2c3e257763e38d3e5c142932dfa39fb7.html">keti_local_planning</a></li><li class="navelem"><a class="el" href="dir_196eae26133acfbe1f790166c12053fb.html">include</a></li><li class="navelem"><a class="el" href="dir_410add44338b2c7b0cc85a85106c27ad.html">data_classes</a></li><li class="navelem"><a class="el" href="gpspoint_8h.html">gpspoint.h</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

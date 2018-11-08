@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/devel
+
+Name: keti_local_planning
+Description: Description of keti_local_planning
+Version: 0.0.0
+Cflags: -I/home/dallddungi/keti_ws/src/keti_local_planning/include
+Libs: -L/home/dallddungi/keti_ws/devel/lib 
+Requires: roscpp geometry_msgs tf autoware_msgs

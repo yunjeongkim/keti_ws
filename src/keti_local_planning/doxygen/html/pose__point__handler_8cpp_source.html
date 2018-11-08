@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>KetiWS: /home/dallddungi/keti_ws/src/keti_local_planning/src/data_handler/pose_point_handler.cpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KetiWS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('pose__point__handler_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">pose_point_handler.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pose__point__handler_8cpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pose__point__handler_8h.html">data_handler/pose_point_handler.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;tf/tf.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a752ad3fb30dbe034908e7e6be50b9a42">    4</a></span>&#160;<a class="code" href="class_pose_point_handler.html#a752ad3fb30dbe034908e7e6be50b9a42">PosePointHandler::PosePointHandler</a>()</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a6c9b665fb0434622641bb1c1e71d40ef">    8</a></span>&#160;<a class="code" href="class_pose_point_handler.html#a752ad3fb30dbe034908e7e6be50b9a42">PosePointHandler::PosePointHandler</a>(<span class="keyword">const</span> geometry_msgs::Pose&amp; pose, <span class="keyword">const</span> geometry_msgs::Point&amp; point)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_pose_point_handler.html#ab78a62b6b03dee10487bf53339685a7d">pose_</a> = pose;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_pose_point_handler.html#aa6dc915c1a9a98a64dd78c51f4b5ae02">point_</a> = point;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#ae75fcd9ec5c7dcf9194939aa631e47ae">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pose_point_handler.html#ae75fcd9ec5c7dcf9194939aa631e47ae">PosePointHandler::setPose</a>(<span class="keyword">const</span> geometry_msgs::Pose&amp; pose)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_pose_point_handler.html#ab78a62b6b03dee10487bf53339685a7d">pose_</a> = pose;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a948561235698288597b3c65f03f1d1aa">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pose_point_handler.html#a948561235698288597b3c65f03f1d1aa">PosePointHandler::setPoint</a>(<span class="keyword">const</span> geometry_msgs::Point&amp; point)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_pose_point_handler.html#aa6dc915c1a9a98a64dd78c51f4b5ae02">point_</a> = point;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a6d037671a1c93d9d51a7b0e40eacd3fa">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_pose_point_handler.html#a6d037671a1c93d9d51a7b0e40eacd3fa">PosePointHandler::setPosePoint</a>(<span class="keyword">const</span> geometry_msgs::Pose&amp; pose, <span class="keyword">const</span> geometry_msgs::Point&amp; point)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_pose_point_handler.html#ab78a62b6b03dee10487bf53339685a7d">pose_</a> = pose;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_pose_point_handler.html#aa6dc915c1a9a98a64dd78c51f4b5ae02">point_</a> = point;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a030d4318ea42d398798b675624ebd07b">   27</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_pose_point_handler.html#a030d4318ea42d398798b675624ebd07b">PosePointHandler::isPoisitionInFrontOfPose</a>()</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">double</span> x = <a class="code" href="class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c">PosePointHandler::calcRelativeCoordinate</a>().x;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (x &lt; 0)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c">   36</a></span>&#160;geometry_msgs::Point <a class="code" href="class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c">PosePointHandler::calcRelativeCoordinate</a>()</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  tf::Transform inverse;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  tf::poseMsgToTF(<a class="code" href="class_pose_point_handler.html#ab78a62b6b03dee10487bf53339685a7d">pose_</a>, inverse);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  tf::Transform transform = inverse.inverse();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  tf::Point p;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  pointMsgToTF(<a class="code" href="class_pose_point_handler.html#aa6dc915c1a9a98a64dd78c51f4b5ae02">point_</a>, p);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  tf::Point tf_p = transform * p;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  geometry_msgs::Point tf_point_msg;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  pointTFToMsg(tf_p, tf_point_msg);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> tf_point_msg;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="class_pose_point_handler_html_a8ca33b37d5cb22e1310b863fcb94676c"><div class="ttname"><a href="class_pose_point_handler.html#a8ca33b37d5cb22e1310b863fcb94676c">PosePointHandler::calcRelativeCoordinate</a></div><div class="ttdeci">geometry_msgs::Point calcRelativeCoordinate()</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00036">pose_point_handler.cpp:36</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_a6d037671a1c93d9d51a7b0e40eacd3fa"><div class="ttname"><a href="class_pose_point_handler.html#a6d037671a1c93d9d51a7b0e40eacd3fa">PosePointHandler::setPosePoint</a></div><div class="ttdeci">void setPosePoint(const geometry_msgs::Pose &amp;pose, const geometry_msgs::Point &amp;point)</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00022">pose_point_handler.cpp:22</a></div></div>
+<div class="ttc" id="pose__point__handler_8h_html"><div class="ttname"><a href="pose__point__handler_8h.html">pose_point_handler.h</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_ae75fcd9ec5c7dcf9194939aa631e47ae"><div class="ttname"><a href="class_pose_point_handler.html#ae75fcd9ec5c7dcf9194939aa631e47ae">PosePointHandler::setPose</a></div><div class="ttdeci">void setPose(const geometry_msgs::Pose &amp;pose)</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00014">pose_point_handler.cpp:14</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_ab78a62b6b03dee10487bf53339685a7d"><div class="ttname"><a href="class_pose_point_handler.html#ab78a62b6b03dee10487bf53339685a7d">PosePointHandler::pose_</a></div><div class="ttdeci">geometry_msgs::Pose pose_</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8h_source.html#l00013">pose_point_handler.h:13</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_a030d4318ea42d398798b675624ebd07b"><div class="ttname"><a href="class_pose_point_handler.html#a030d4318ea42d398798b675624ebd07b">PosePointHandler::isPoisitionInFrontOfPose</a></div><div class="ttdeci">bool isPoisitionInFrontOfPose()</div><div class="ttdoc">Check whether a point is in the front of the current_pose. </div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00027">pose_point_handler.cpp:27</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_a948561235698288597b3c65f03f1d1aa"><div class="ttname"><a href="class_pose_point_handler.html#a948561235698288597b3c65f03f1d1aa">PosePointHandler::setPoint</a></div><div class="ttdeci">void setPoint(const geometry_msgs::Point &amp;point)</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00018">pose_point_handler.cpp:18</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_aa6dc915c1a9a98a64dd78c51f4b5ae02"><div class="ttname"><a href="class_pose_point_handler.html#aa6dc915c1a9a98a64dd78c51f4b5ae02">PosePointHandler::point_</a></div><div class="ttdeci">geometry_msgs::Point point_</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8h_source.html#l00015">pose_point_handler.h:15</a></div></div>
+<div class="ttc" id="class_pose_point_handler_html_a752ad3fb30dbe034908e7e6be50b9a42"><div class="ttname"><a href="class_pose_point_handler.html#a752ad3fb30dbe034908e7e6be50b9a42">PosePointHandler::PosePointHandler</a></div><div class="ttdeci">PosePointHandler()</div><div class="ttdef"><b>Definition:</b> <a href="pose__point__handler_8cpp_source.html#l00004">pose_point_handler.cpp:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9b44a31e3a7be62c06504fa932748c2c.html">dallddungi</a></li><li class="navelem"><a class="el" href="dir_574c0012f29f11d3d2bdc04c61706132.html">keti_ws</a></li><li class="navelem"><a class="el" href="dir_86354cf238a0f5740adb6609c2b60ceb.html">src</a></li><li class="navelem"><a class="el" href="dir_2c3e257763e38d3e5c142932dfa39fb7.html">keti_local_planning</a></li><li class="navelem"><a class="el" href="dir_a629cd0bb975642a6b0594a79ffd1ec4.html">src</a></li><li class="navelem"><a class="el" href="dir_0abe52c218ff64b9cf46e7b2c01d7756.html">data_handler</a></li><li class="navelem"><a class="el" href="pose__point__handler_8cpp.html">pose_point_handler.cpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

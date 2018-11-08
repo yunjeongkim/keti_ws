@@ -1,0 +1,476 @@
+\hypertarget{class_lane_handler}{}\section{Lane\+Handler 클래스 참조}
+\label{class_lane_handler}\index{Lane\+Handler@{Lane\+Handler}}
+
+
+This class treats lane information with autowar\+\_\+msgs\+::lane and std\+::vector$<$\+Way\+Point$>$  
+
+
+
+
+{\ttfamily \#include $<$lane\+\_\+handler.\+h$>$}
+
+
+
+Lane\+Handler에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_lane_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lane_handler_ac8a26880811b795d49d9b3578d3f03fb}{Lane\+Handler} ()
+\item 
+\hyperlink{class_lane_handler_af9236889af0e7d75ca3230d47175a9b5}{Lane\+Handler} (const std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \&lane)
+\item 
+\hyperlink{class_lane_handler_af00842c287a4ea45b48a0d928b861048}{Lane\+Handler} (const autoware\+\_\+msgs\+::lane \&lane)
+\item 
+void \hyperlink{class_lane_handler_a6c4cc7f5ae19a81cd24ba1427b0afb74}{set\+Lane} (const autoware\+\_\+msgs\+::lane \&lane)
+\item 
+void \hyperlink{class_lane_handler_a33776b288c92ee7e63f865e6c9526ff3}{set\+Lane} (const std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \&lane)
+\item 
+autoware\+\_\+msgs\+::lane \hyperlink{class_lane_handler_a9d66775c597130ccbd369d50c7572c2e}{get\+Autoware\+Lane} ()
+\item 
+std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \hyperlink{class_lane_handler_afe241272b5017d7d0e439d08bbf855d9}{get\+Waypoints\+Lane} ()
+\item 
+int \hyperlink{class_lane_handler_a71033c4e67c07e09c2c3c18fabfb7463}{get\+Closest\+Waypoint} (const geometry\+\_\+msgs\+::\+Pose \&wp)
+\begin{DoxyCompactList}\small\item\em Find a point on the lane which is the closest point to the \hyperlink{class_way_point}{Way\+Point}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\+\_\+lane\+\_\+}
+\item 
+autoware\+\_\+msgs\+::lane \hyperlink{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{autoware\+\_\+lane\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1}{convert\+From\+Lane\+To\+Waypoints} (const autoware\+\_\+msgs\+::lane \&lane, std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \&path)
+\item 
+void \hyperlink{class_lane_handler_a70a120b84428226b70754055b42dca2f}{Convert\+From\+Waypoints\+To\+Lane} (const std\+::vector$<$ \hyperlink{class_way_point}{Way\+Point} $>$ \&path, const int \&i\+Start, autoware\+\_\+msgs\+::lane \&trajectory)
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+This class treats lane information with autowar\+\_\+msgs\+::lane and std\+::vector$<$\+Way\+Point$>$ 
+
+lane\+\_\+handler.\+h 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{Lane\+Handler()}{LaneHandler()}}]{\setlength{\rightskip}{0pt plus 5cm}Lane\+Handler\+::\+Lane\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_ac8a26880811b795d49d9b3578d3f03fb}{}\label{class_lane_handler_ac8a26880811b795d49d9b3578d3f03fb}
+
+
+lane\+\_\+handler.\+cpp 파일의 7 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+8 \{
+9 
+10 \}
+\end{DoxyCode}
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{Lane\+Handler(const std\+::vector$<$ Way\+Point $>$ \&lane)}{LaneHandler(const std::vector< WayPoint > &lane)}}]{\setlength{\rightskip}{0pt plus 5cm}Lane\+Handler\+::\+Lane\+Handler (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Way\+Point} $>$ \&}]{lane}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_af9236889af0e7d75ca3230d47175a9b5}{}\label{class_lane_handler_af9236889af0e7d75ca3230d47175a9b5}
+
+
+lane\+\_\+handler.\+cpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+13 \{
+14   \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_} = lane;
+15   \hyperlink{class_lane_handler_a70a120b84428226b70754055b42dca2f}{ConvertFromWaypointsToLane}(lane,0,\hyperlink{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{autoware\_lane\_});
+16 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_af9236889af0e7d75ca3230d47175a9b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\index{Lane\+Handler@{Lane\+Handler}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{Lane\+Handler(const autoware\+\_\+msgs\+::lane \&lane)}{LaneHandler(const autoware_msgs::lane &lane)}}]{\setlength{\rightskip}{0pt plus 5cm}Lane\+Handler\+::\+Lane\+Handler (
+\begin{DoxyParamCaption}
+\item[{const autoware\+\_\+msgs\+::lane \&}]{lane}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_af00842c287a4ea45b48a0d928b861048}{}\label{class_lane_handler_af00842c287a4ea45b48a0d928b861048}
+
+
+lane\+\_\+handler.\+cpp 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+19 \{
+20   \hyperlink{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{autoware\_lane\_} = lane;
+21   \hyperlink{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1}{convertFromLaneToWaypoints}(lane, \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_});
+22 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_af00842c287a4ea45b48a0d928b861048_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Lane\+Handler@{Lane\+Handler}!convert\+From\+Lane\+To\+Waypoints@{convert\+From\+Lane\+To\+Waypoints}}
+\index{convert\+From\+Lane\+To\+Waypoints@{convert\+From\+Lane\+To\+Waypoints}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{convert\+From\+Lane\+To\+Waypoints(const autoware\+\_\+msgs\+::lane \&lane, std\+::vector$<$ Way\+Point $>$ \&path)}{convertFromLaneToWaypoints(const autoware_msgs::lane &lane, std::vector< WayPoint > &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lane\+Handler\+::convert\+From\+Lane\+To\+Waypoints (
+\begin{DoxyParamCaption}
+\item[{const autoware\+\_\+msgs\+::lane \&}]{lane, }
+\item[{std\+::vector$<$ {\bf Way\+Point} $>$ \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1}{}\label{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1}
+
+
+lane\+\_\+handler.\+cpp 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+43 \{
+44   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j = 0 ; j < lane.waypoints.size(); j++)
+45   \{
+46     \hyperlink{class_way_point}{WayPoint} wp(lane.waypoints.at(j).pose.pose.position.x,
+47                 lane.waypoints.at(j).pose.pose.position.y,
+48                 lane.waypoints.at(j).pose.pose.position.z,
+49                 tf::getYaw(lane.waypoints.at(j).pose.pose.orientation));
+50     wp.v\_ = lane.waypoints.at(j).twist.twist.linear.x;
+51     path.push\_back(wp);
+52   \}
+53 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!Convert\+From\+Waypoints\+To\+Lane@{Convert\+From\+Waypoints\+To\+Lane}}
+\index{Convert\+From\+Waypoints\+To\+Lane@{Convert\+From\+Waypoints\+To\+Lane}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{Convert\+From\+Waypoints\+To\+Lane(const std\+::vector$<$ Way\+Point $>$ \&path, const int \&i\+Start, autoware\+\_\+msgs\+::lane \&trajectory)}{ConvertFromWaypointsToLane(const std::vector< WayPoint > &path, const int &iStart, autoware_msgs::lane &trajectory)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lane\+Handler\+::\+Convert\+From\+Waypoints\+To\+Lane (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Way\+Point} $>$ \&}]{path, }
+\item[{const int \&}]{i\+Start, }
+\item[{autoware\+\_\+msgs\+::lane \&}]{trajectory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_lane_handler_a70a120b84428226b70754055b42dca2f}{}\label{class_lane_handler_a70a120b84428226b70754055b42dca2f}
+
+
+lane\+\_\+handler.\+cpp 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+57 \{
+58   trajectory.waypoints.clear();
+59   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=iStart; i < path.size(); i++)
+60   \{
+61     autoware\_msgs::waypoint wp;
+62     wp.pose.pose.position.x = path.at(i).pos\_.x\_;
+63     wp.pose.pose.position.y = path.at(i).pos\_.y\_;
+64     wp.pose.pose.position.z = path.at(i).pos\_.z\_;
+65     wp.pose.pose.orientation = tf::createQuaternionMsgFromYaw(
+      \hyperlink{class_angle_utils_a91f3e34c9e1e35788d44a2f6bc5bc206}{AngleUtils::SplitPositiveAngle}(path.at(i).pos\_.a\_));
+66     wp.twist.twist.linear.x = path.at(i).v\_;
+67     trajectory.waypoints.push\_back(wp);
+68   \}
+69 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a70a120b84428226b70754055b42dca2f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a70a120b84428226b70754055b42dca2f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!get\+Autoware\+Lane@{get\+Autoware\+Lane}}
+\index{get\+Autoware\+Lane@{get\+Autoware\+Lane}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Autoware\+Lane()}{getAutowareLane()}}]{\setlength{\rightskip}{0pt plus 5cm}autoware\+\_\+msgs\+::lane Lane\+Handler\+::get\+Autoware\+Lane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_a9d66775c597130ccbd369d50c7572c2e}{}\label{class_lane_handler_a9d66775c597130ccbd369d50c7572c2e}
+
+
+lane\+\_\+handler.\+cpp 파일의 33 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+34 \{
+35   \textcolor{keywordflow}{return} \hyperlink{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{autoware\_lane\_};
+36 \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a9d66775c597130ccbd369d50c7572c2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!get\+Closest\+Waypoint@{get\+Closest\+Waypoint}}
+\index{get\+Closest\+Waypoint@{get\+Closest\+Waypoint}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Closest\+Waypoint(const geometry\+\_\+msgs\+::\+Pose \&wp)}{getClosestWaypoint(const geometry_msgs::Pose &wp)}}]{\setlength{\rightskip}{0pt plus 5cm}int Lane\+Handler\+::get\+Closest\+Waypoint (
+\begin{DoxyParamCaption}
+\item[{const geometry\+\_\+msgs\+::\+Pose \&}]{current\+\_\+pose}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_a71033c4e67c07e09c2c3c18fabfb7463}{}\label{class_lane_handler_a71033c4e67c07e09c2c3c18fabfb7463}
+
+
+Find a point on the lane which is the closest point to the \hyperlink{class_way_point}{Way\+Point}. 
+
+Find the closest waypoint index on the lane from point.
+
+
+\begin{DoxyParams}{매개변수}
+{\em wp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+index of the closest waypoint on the lane.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em current\+\_\+pose} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+
+
+lane\+\_\+handler.\+cpp 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+78 \{
+79 
+80   \textcolor{keywordflow}{if} (\hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.empty()==\textcolor{keyword}{true})
+81     \textcolor{keywordflow}{return} -1;
+82 
+83   \textcolor{comment}{// search closest candidate within a certain meter}
+84   \textcolor{keywordtype}{double} search\_distance = 5.0;
+85   std::vector<int> waypoint\_candidates;
+86   \hyperlink{class_pose_point_handler}{PosePointHandler} pp\_handler;
+87 
+88   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i < \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.size(); i++)
+89   \{
+90     pp\_handler.\hyperlink{class_pose_point_handler_a6d037671a1c93d9d51a7b0e40eacd3fa}{setPosePoint}(current\_pose,\hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.at(i).getPoint());
+91     \textcolor{keywordflow}{if} (\hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.at(i).getDistance(current\_pose.position) > search\_distance)
+92       \textcolor{keywordflow}{continue};
+93 
+94     \textcolor{keywordflow}{if} (!pp\_handler.\hyperlink{class_pose_point_handler_a030d4318ea42d398798b675624ebd07b}{isPoisitionInFrontOfPose}())
+95       \textcolor{keywordflow}{continue};
+96 
+97     waypoint\_candidates.push\_back(i);
+98   \}
+99 
+100   \textcolor{comment}{// get closest waypoint from candidates}
+101   \textcolor{keywordflow}{if} (!waypoint\_candidates.empty())
+102   \{
+103     \textcolor{keywordtype}{int} waypoint\_min = -1;
+104     \textcolor{keywordtype}{double} distance\_min = DBL\_MAX;
+105     \textcolor{keywordflow}{for}(uint el=0; el<waypoint\_candidates.size();el++)
+106     \{
+107       \textcolor{keywordtype}{int} cur\_way = waypoint\_candidates.at(el);
+108       \textcolor{keywordtype}{double} d = \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.at(cur\_way).getDistance(current\_pose.position);
+109       \textcolor{keywordflow}{if} (d < distance\_min)
+110       \{
+111         waypoint\_min = cur\_way;
+112         distance\_min = d;
+113       \}
+114     \}
+115     \textcolor{keywordflow}{return} waypoint\_min;
+116   \}
+117   \textcolor{keywordflow}{else}
+118   \{
+119     ROS\_INFO(\textcolor{stringliteral}{"no candidate. search closest waypoint from all waypoints..."});
+120     \textcolor{comment}{// if there is no candidate...}
+121     \textcolor{keywordtype}{int} waypoint\_min = -1;
+122     \textcolor{keywordtype}{double} distance\_min = DBL\_MAX;
+123     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i <\hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.size(); i++)
+124     \{
+125       pp\_handler.\hyperlink{class_pose_point_handler_a6d037671a1c93d9d51a7b0e40eacd3fa}{setPosePoint}(current\_pose,\hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.at(i).getPoint());
+126 
+127       \textcolor{keywordflow}{if} (!pp\_handler.\hyperlink{class_pose_point_handler_a030d4318ea42d398798b675624ebd07b}{isPoisitionInFrontOfPose}())
+128         \textcolor{keywordflow}{continue};
+129 
+130 
+131       \textcolor{keywordtype}{double} d = \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_}.at(i).getDistance(current\_pose.position);
+132       \textcolor{keywordflow}{if} (d < distance\_min)
+133       \{
+134         waypoint\_min = i;
+135         distance\_min = d;
+136       \}
+137     \}
+138     \textcolor{keywordflow}{return} waypoint\_min;
+139   \}
+140 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a71033c4e67c07e09c2c3c18fabfb7463_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a71033c4e67c07e09c2c3c18fabfb7463_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!get\+Waypoints\+Lane@{get\+Waypoints\+Lane}}
+\index{get\+Waypoints\+Lane@{get\+Waypoints\+Lane}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{get\+Waypoints\+Lane()}{getWaypointsLane()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Way\+Point} $>$ Lane\+Handler\+::get\+Waypoints\+Lane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_afe241272b5017d7d0e439d08bbf855d9}{}\label{class_lane_handler_afe241272b5017d7d0e439d08bbf855d9}
+
+
+lane\+\_\+handler.\+cpp 파일의 37 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+38 \{
+39   \textcolor{keywordflow}{return} \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_};
+40 \}
+\end{DoxyCode}
+\index{Lane\+Handler@{Lane\+Handler}!set\+Lane@{set\+Lane}}
+\index{set\+Lane@{set\+Lane}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{set\+Lane(const autoware\+\_\+msgs\+::lane \&lane)}{setLane(const autoware_msgs::lane &lane)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lane\+Handler\+::set\+Lane (
+\begin{DoxyParamCaption}
+\item[{const autoware\+\_\+msgs\+::lane \&}]{lane}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_a6c4cc7f5ae19a81cd24ba1427b0afb74}{}\label{class_lane_handler_a6c4cc7f5ae19a81cd24ba1427b0afb74}
+
+
+lane\+\_\+handler.\+cpp 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+24 \{
+25   \hyperlink{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{autoware\_lane\_} = lane;
+26   \hyperlink{class_lane_handler_a48d47e25edd09df1aa859904bd68c8f1}{convertFromLaneToWaypoints}(lane, \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_});
+27 \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a6c4cc7f5ae19a81cd24ba1427b0afb74_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lane_handler_a6c4cc7f5ae19a81cd24ba1427b0afb74_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lane\+Handler@{Lane\+Handler}!set\+Lane@{set\+Lane}}
+\index{set\+Lane@{set\+Lane}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{set\+Lane(const std\+::vector$<$ Way\+Point $>$ \&lane)}{setLane(const std::vector< WayPoint > &lane)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lane\+Handler\+::set\+Lane (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf Way\+Point} $>$ \&}]{lane}
+\end{DoxyParamCaption}
+)}\hypertarget{class_lane_handler_a33776b288c92ee7e63f865e6c9526ff3}{}\label{class_lane_handler_a33776b288c92ee7e63f865e6c9526ff3}
+
+
+lane\+\_\+handler.\+cpp 파일의 28 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+29 \{
+30   \hyperlink{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{waypoints\_lane\_} = lane;
+31 \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{Lane\+Handler@{Lane\+Handler}!autoware\+\_\+lane\+\_\+@{autoware\+\_\+lane\+\_\+}}
+\index{autoware\+\_\+lane\+\_\+@{autoware\+\_\+lane\+\_\+}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{autoware\+\_\+lane\+\_\+}{autoware_lane_}}]{\setlength{\rightskip}{0pt plus 5cm}autoware\+\_\+msgs\+::lane Lane\+Handler\+::autoware\+\_\+lane\+\_\+}\hypertarget{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}{}\label{class_lane_handler_a167378a780eafb8242f7b12bd5460ac0}
+
+
+lane\+\_\+handler.\+h 파일의 17 번째 라인에서 정의되었습니다.
+
+\index{Lane\+Handler@{Lane\+Handler}!waypoints\+\_\+lane\+\_\+@{waypoints\+\_\+lane\+\_\+}}
+\index{waypoints\+\_\+lane\+\_\+@{waypoints\+\_\+lane\+\_\+}!Lane\+Handler@{Lane\+Handler}}
+\subsubsection[{\texorpdfstring{waypoints\+\_\+lane\+\_\+}{waypoints_lane_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Way\+Point}$>$ Lane\+Handler\+::waypoints\+\_\+lane\+\_\+}\hypertarget{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}{}\label{class_lane_handler_ac65a0139b3900a7c8dc3fe49d7a684f3}
+
+
+lane\+\_\+handler.\+h 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/include/data\+\_\+handler/\hyperlink{lane__handler_8h}{lane\+\_\+handler.\+h}\item 
+/home/dallddungi/keti\+\_\+ws/src/keti\+\_\+local\+\_\+planning/src/data\+\_\+handler/\hyperlink{lane__handler_8cpp}{lane\+\_\+handler.\+cpp}\end{DoxyCompactItemize}

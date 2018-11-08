@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>KetiWS: /home/dallddungi/keti_ws/src/keti_local_planning/include/utils/angle_utils.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">KetiWS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="modules.html"><span>모듈</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('angle__utils_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">angle_utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="angle__utils_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ANGLE_UTILS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ANGLE_UTILS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_angle_utils.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_angle_utils.html">AngleUtils</a>{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_angle_utils.html#a244b7e39d429d0667180ee1f6c4688dc">AngleUtils</a>();</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="class_angle_utils.html#afd7d97d10e25e67dfad8a3700168f796">~AngleUtils</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_angle_utils.html#a27d9bd3a5b5816f9b94dbdadc785a75d">FixNegativeAngle</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_angle_utils.html#a91f3e34c9e1e35788d44a2f6bc5bc206">SplitPositiveAngle</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_angle_utils.html#a90a3b153450f72621fa4d601630f7999">InverseAngle</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_angle_utils.html#aa9a3fb876a9b6d446a8033d2f901bb73">AngleBetweenTwoAnglesPositive</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a1, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a2);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_angle_utils.html#a5a51b312ed27e10ab9af2e092a897da7">GetCircularAngle</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; prevContAngle, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; prevAngle, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; currAngle);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif // ANGLE_UTILS_H</span></div><div class="ttc" id="class_angle_utils_html_afd7d97d10e25e67dfad8a3700168f796"><div class="ttname"><a href="class_angle_utils.html#afd7d97d10e25e67dfad8a3700168f796">AngleUtils::~AngleUtils</a></div><div class="ttdeci">virtual ~AngleUtils()</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00007">angle_utils.cpp:7</a></div></div>
+<div class="ttc" id="class_angle_utils_html_a90a3b153450f72621fa4d601630f7999"><div class="ttname"><a href="class_angle_utils.html#a90a3b153450f72621fa4d601630f7999">AngleUtils::InverseAngle</a></div><div class="ttdeci">static double InverseAngle(const double &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00053">angle_utils.cpp:53</a></div></div>
+<div class="ttc" id="class_angle_utils_html_a244b7e39d429d0667180ee1f6c4688dc"><div class="ttname"><a href="class_angle_utils.html#a244b7e39d429d0667180ee1f6c4688dc">AngleUtils::AngleUtils</a></div><div class="ttdeci">AngleUtils()</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00003">angle_utils.cpp:3</a></div></div>
+<div class="ttc" id="class_angle_utils_html_a91f3e34c9e1e35788d44a2f6bc5bc206"><div class="ttname"><a href="class_angle_utils.html#a91f3e34c9e1e35788d44a2f6bc5bc206">AngleUtils::SplitPositiveAngle</a></div><div class="ttdeci">static double SplitPositiveAngle(const double &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00032">angle_utils.cpp:32</a></div></div>
+<div class="ttc" id="class_angle_utils_html_a5a51b312ed27e10ab9af2e092a897da7"><div class="ttname"><a href="class_angle_utils.html#a5a51b312ed27e10ab9af2e092a897da7">AngleUtils::GetCircularAngle</a></div><div class="ttdeci">static double GetCircularAngle(const double &amp;prevContAngle, const double &amp;prevAngle, const double &amp;currAngle)</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00077">angle_utils.cpp:77</a></div></div>
+<div class="ttc" id="class_angle_utils_html_aa9a3fb876a9b6d446a8033d2f901bb73"><div class="ttname"><a href="class_angle_utils.html#aa9a3fb876a9b6d446a8033d2f901bb73">AngleUtils::AngleBetweenTwoAnglesPositive</a></div><div class="ttdeci">static double AngleBetweenTwoAnglesPositive(const double &amp;a1, const double &amp;a2)</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00065">angle_utils.cpp:65</a></div></div>
+<div class="ttc" id="class_angle_utils_html_a27d9bd3a5b5816f9b94dbdadc785a75d"><div class="ttname"><a href="class_angle_utils.html#a27d9bd3a5b5816f9b94dbdadc785a75d">AngleUtils::FixNegativeAngle</a></div><div class="ttdeci">static double FixNegativeAngle(const double &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8cpp_source.html#l00013">angle_utils.cpp:13</a></div></div>
+<div class="ttc" id="class_angle_utils_html"><div class="ttname"><a href="class_angle_utils.html">AngleUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="angle__utils_8h_source.html#l00008">angle_utils.h:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="dir_9b44a31e3a7be62c06504fa932748c2c.html">dallddungi</a></li><li class="navelem"><a class="el" href="dir_574c0012f29f11d3d2bdc04c61706132.html">keti_ws</a></li><li class="navelem"><a class="el" href="dir_86354cf238a0f5740adb6609c2b60ceb.html">src</a></li><li class="navelem"><a class="el" href="dir_2c3e257763e38d3e5c142932dfa39fb7.html">keti_local_planning</a></li><li class="navelem"><a class="el" href="dir_196eae26133acfbe1f790166c12053fb.html">include</a></li><li class="navelem"><a class="el" href="dir_5cc220ec03aaf170956d09c5c5ca56bf.html">utils</a></li><li class="navelem"><a class="el" href="angle__utils_8h.html">angle_utils.h</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
