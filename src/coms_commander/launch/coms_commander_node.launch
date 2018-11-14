@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+<!--<param name ="/use_sim_time" value="false"/>-->
+  <node pkg="coms_commander" type="coms_commander_node" name="commander" output="log">
+    <remap from="cmd_steer" to="steering/cmd_steer" />
+
+    <rosparam command="load" file="$(find coms_commander)/configs/coms.yaml" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/install
+
+Name: prius_msgs
+Description: Description of prius_msgs
+Version: 0.0.1
+Cflags: -I/home/dallddungi/keti_ws/install/include
+Libs: -L/home/dallddungi/keti_ws/install/lib 
+Requires: message_runtime std_msgs

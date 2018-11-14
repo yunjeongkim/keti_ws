@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/install
+
+Name: car_demo
+Description: Description of car_demo
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/dallddungi/keti_ws/install/lib 
+Requires: gazebo_ros prius_msgs tf geometry_msgs

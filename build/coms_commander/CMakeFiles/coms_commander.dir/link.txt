@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11 -Wall -g  -shared -Wl,-soname,libcoms_commander.so -o /home/dallddungi/keti_ws/devel/lib/libcoms_commander.so CMakeFiles/coms_commander.dir/src/coms_commander.cpp.o 
