@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   tf
   autoware_msgs
+  mobileye_560_660_msgs
 )
 
 find_package(Eigen3 REQUIRED)
@@ -18,6 +19,7 @@ catkin_package(
   geometry_msgs
   tf
   autoware_msgs
+  mobileye_560_660_msgs
 )
 
 SET(CMAKE_CXX_FLAGS "-O2 -g -Wall -Wno-unused-result -DROS ${CMAKE_CXX_FLAGS}")

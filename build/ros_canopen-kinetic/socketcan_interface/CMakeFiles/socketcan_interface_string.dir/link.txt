@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libsocketcan_interface_string.so -o /home/dallddungi/keti_ws/devel/lib/libsocketcan_interface_string.so CMakeFiles/socketcan_interface_string.dir/src/string.cpp.o 

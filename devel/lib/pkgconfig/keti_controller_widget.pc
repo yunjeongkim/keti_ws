@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/devel
+
+Name: keti_controller_widget
+Description: Description of keti_controller_widget
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/dallddungi/keti_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/devel
+
+Name: mobileye_560_660_msgs
+Description: Description of mobileye_560_660_msgs
+Version: 2.3.0
+Cflags: -I/home/dallddungi/keti_ws/devel/include
+Libs: -L/home/dallddungi/keti_ws/devel/lib 
+Requires: std_msgs message_runtime

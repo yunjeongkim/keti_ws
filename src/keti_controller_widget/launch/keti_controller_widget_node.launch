@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+<node pkg="socketcan_bridge" type="socketcan_to_topic_node" name="socketcan_to_topic_node" output="screen">
+    <param name="can_device" value="vcan0" />
+</node>
+
+
+  <node pkg="keti_controller_widget" type="keti_controller_widget" name="keticontroller" output="screen" >
+    <remap from="ref_vel" to="/twist_cmd" /> <!-- Input -->
+    <remap from="recv_msgs" to="/received_messages" /> <!-- Input -->
+    <rosparam command="load" file="$(find keti_controller_widget)/configs/config.yaml" />
+  </node>
+
+<node pkg="socketcan_bridge" type="topic_to_socketcan_node" name="topic_to_socketcan_node" output="screen">
+      <param name="can_device" value="vcan1" />
+      <remap from="sent_messages" to="can_out" />
+</node>
+
+
+</launch>

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11 -Wall -g  -shared -Wl,-soname,libqnode.so -o /home/dallddungi/keti_ws/devel/lib/libqnode.so CMakeFiles/qnode.dir/src/qnode.cpp.o 

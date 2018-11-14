@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/install
+
+Name: canopen_402
+Description: Description of canopen_402
+Version: 0.7.6
+Cflags: -I/home/dallddungi/keti_ws/install/include -I/usr/include
+Libs: -L/home/dallddungi/keti_ws/install/lib -lcanopen_402
+Requires: canopen_master

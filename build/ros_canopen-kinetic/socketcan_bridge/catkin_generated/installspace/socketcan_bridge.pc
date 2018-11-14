@@ -1,0 +1,8 @@
+prefix=/home/dallddungi/keti_ws/install
+
+Name: socketcan_bridge
+Description: Description of socketcan_bridge
+Version: 0.7.6
+Cflags: -I/home/dallddungi/keti_ws/install/include
+Libs: -L/home/dallddungi/keti_ws/install/lib -lsocketcan_to_topic -ltopic_to_socketcan
+Requires: can_msgs roscpp socketcan_interface

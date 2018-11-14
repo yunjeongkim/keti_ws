@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dallddungi/keti_ws/src/keti_controller_widget/include/keti_controller_widget/keti_util.h
+
+/home/dallddungi/keti_ws/src/keti_controller_widget/src/keti_util.cpp
+../include/keti_controller_widget/keti_util.h
+/home/dallddungi/keti_ws/src/keti_controller_widget/include/keti_controller_widget/keti_util.h
+
