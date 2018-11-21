@@ -28,7 +28,7 @@ if ("${ROS_VERSION}" MATCHES "(kinetic)")
 endif ()
 
 include_directories(
- include include/data_classes include/data_handler include/utils
+ include include/data_classes include/data_handler include/utils include/algorithm
  ${catkin_INCLUDE_DIRS}
  ${EIGEN3_INCLUDE_DIR}
 )
@@ -42,6 +42,7 @@ add_executable(keti_local_planning
   src/utils/angle_utils.cpp
   src/ros_helpers.cpp
   src/utils/curve_fitting.cpp
+  src/algorithm/lane_change.cpp
   )
 target_link_libraries(keti_local_planning
     ${catkin_LIBRARIES}
@@ -49,3 +50,9 @@ target_link_libraries(keti_local_planning
 add_dependencies(keti_local_planning
         ${catkin_EXPORTED_TARGETS}
         )
+
+    ## Install project namespaced headers
+    install(DIRECTORY include/${PROJECT_NAME}/
+      DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+      FILES_MATCHING PATTERN "*.h"
+      PATTERN ".svn" EXCLUDE)

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dallddungi/catkin_ws/src/hector_gazebo/hector_gazebo_plugins/build/devel/setup.sh

@@ -249,6 +249,30 @@ keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.c
 keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o.provides.build: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o
 
 
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o: keti_local_planning/CMakeFiles/keti_local_planning.dir/flags.make
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o: /home/dallddungi/keti_ws/src/keti_local_planning/src/algorithm/lane_change.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dallddungi/keti_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o"
+	cd /home/dallddungi/keti_ws/build/keti_local_planning && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o -c /home/dallddungi/keti_ws/src/keti_local_planning/src/algorithm/lane_change.cpp
+
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.i"
+	cd /home/dallddungi/keti_ws/build/keti_local_planning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dallddungi/keti_ws/src/keti_local_planning/src/algorithm/lane_change.cpp > CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.i
+
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.s"
+	cd /home/dallddungi/keti_ws/build/keti_local_planning && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dallddungi/keti_ws/src/keti_local_planning/src/algorithm/lane_change.cpp -o CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.s
+
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.requires:
+
+.PHONY : keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.requires
+
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.provides: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.requires
+	$(MAKE) -f keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.provides.build
+.PHONY : keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.provides
+
+keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.provides.build: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o
+
+
 # Object files for target keti_local_planning
 keti_local_planning_OBJECTS = \
 "CMakeFiles/keti_local_planning.dir/src/ketilocalplanning_main.cpp.o" \
@@ -258,7 +282,8 @@ keti_local_planning_OBJECTS = \
 "CMakeFiles/keti_local_planning.dir/src/data_handler/pose_point_handler.cpp.o" \
 "CMakeFiles/keti_local_planning.dir/src/utils/angle_utils.cpp.o" \
 "CMakeFiles/keti_local_planning.dir/src/ros_helpers.cpp.o" \
-"CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o"
+"CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o" \
+"CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o"
 
 # External object files for target keti_local_planning
 keti_local_planning_EXTERNAL_OBJECTS =
@@ -271,6 +296,7 @@ keti_local_planning_EXTERNAL_OBJECTS =
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/angle_utils.cpp.o
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/ros_helpers.cpp.o
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o
+/home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: /opt/ros/kinetic/lib/libtf.so
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: /opt/ros/kinetic/lib/libtf2_ros.so
@@ -297,7 +323,7 @@ keti_local_planning_EXTERNAL_OBJECTS =
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning: keti_local_planning/CMakeFiles/keti_local_planning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dallddungi/keti_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dallddungi/keti_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable /home/dallddungi/keti_ws/devel/lib/keti_local_planning/keti_local_planning"
 	cd /home/dallddungi/keti_ws/build/keti_local_planning && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keti_local_planning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,6 +339,7 @@ keti_local_planning/CMakeFiles/keti_local_planning.dir/requires: keti_local_plan
 keti_local_planning/CMakeFiles/keti_local_planning.dir/requires: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/angle_utils.cpp.o.requires
 keti_local_planning/CMakeFiles/keti_local_planning.dir/requires: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/ros_helpers.cpp.o.requires
 keti_local_planning/CMakeFiles/keti_local_planning.dir/requires: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/utils/curve_fitting.cpp.o.requires
+keti_local_planning/CMakeFiles/keti_local_planning.dir/requires: keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o.requires
 
 .PHONY : keti_local_planning/CMakeFiles/keti_local_planning.dir/requires
 

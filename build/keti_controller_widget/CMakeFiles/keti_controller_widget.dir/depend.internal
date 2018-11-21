@@ -163,7 +163,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_contro
  /usr/include/qt4/QtGui/QButtonGroup
  /usr/include/qt4/QtGui/QCheckBox
  /usr/include/qt4/QtGui/QDockWidget
- /usr/include/qt4/QtGui/QFrame
  /usr/include/qt4/QtGui/QGridLayout
  /usr/include/qt4/QtGui/QGroupBox
  /usr/include/qt4/QtGui/QHBoxLayout
@@ -175,7 +174,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_contro
  /usr/include/qt4/QtGui/QMenuBar
  /usr/include/qt4/QtGui/QPlatformWindow
  /usr/include/qt4/QtGui/QPushButton
- /usr/include/qt4/QtGui/QSpacerItem
  /usr/include/qt4/QtGui/QStatusBar
  /usr/include/qt4/QtGui/QStringListModel
  /usr/include/qt4/QtGui/QTabWidget
@@ -709,7 +707,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o
  /usr/include/qt4/QtGui/QDockWidget
  /usr/include/qt4/QtGui/QFileDialog
  /usr/include/qt4/QtGui/QFont
- /usr/include/qt4/QtGui/QFrame
  /usr/include/qt4/QtGui/QGridLayout
  /usr/include/qt4/QtGui/QGroupBox
  /usr/include/qt4/QtGui/QHBoxLayout
@@ -725,7 +722,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o
  /usr/include/qt4/QtGui/QPlatformWindow
  /usr/include/qt4/QtGui/QPrinter
  /usr/include/qt4/QtGui/QPushButton
- /usr/include/qt4/QtGui/QSpacerItem
  /usr/include/qt4/QtGui/QStatusBar
  /usr/include/qt4/QtGui/QStringListModel
  /usr/include/qt4/QtGui/QTabWidget
@@ -1225,7 +1221,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp
  /usr/include/qt4/QtGui/QDockWidget
  /usr/include/qt4/QtGui/QFileDialog
  /usr/include/qt4/QtGui/QFont
- /usr/include/qt4/QtGui/QFrame
  /usr/include/qt4/QtGui/QGridLayout
  /usr/include/qt4/QtGui/QGroupBox
  /usr/include/qt4/QtGui/QHBoxLayout
@@ -1242,7 +1237,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp
  /usr/include/qt4/QtGui/QPlatformWindow
  /usr/include/qt4/QtGui/QPrinter
  /usr/include/qt4/QtGui/QPushButton
- /usr/include/qt4/QtGui/QSpacerItem
  /usr/include/qt4/QtGui/QStatusBar
  /usr/include/qt4/QtGui/QStringListModel
  /usr/include/qt4/QtGui/QTabWidget

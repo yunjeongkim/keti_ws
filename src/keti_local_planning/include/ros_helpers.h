@@ -6,12 +6,30 @@
 #include "data_classes/waypoint.h"
 #include "data_classes/cubicsplineparams.h"
 #include <math.h>
+#include "waypoint.h"
 
 class RosHelpers
 {
 public:
   RosHelpers();
   virtual ~RosHelpers();
+
+   /**
+   * @brief ConvertWaypointUsingTF
+   * @param wp input wp is waypoint to be converted using transform
+   * @param transform input
+   * @param result output result is the waypoint in the coordinate with wp as the origin.
+   */
+  static void ConvertWaypointUsingTF(const WayPoint& wp,const tf::Transform& transform, WayPoint& result);
+
+  /**
+   * @brief GetTransformFromWaypoint get transform from zero to child waypoint.
+   * @param child intput
+   * @param transform output
+   */
+  static void GetTransformFromWaypoint(const WayPoint& child, tf::Transform& transform);
+
+  static void GetTransformFromTF(const std::string parent_frame, const std::string child_frame, tf::StampedTransform &transform);
 
   static void ConvertFromPlannerHToAutowareVisualizePathFormat(const std::vector<std::vector<WayPoint> >& globalPaths,
                                                                const std::string& frame,

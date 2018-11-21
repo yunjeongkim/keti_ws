@@ -1,4 +1,8 @@
 #include "ros_helpers.h"
+#include <tf/transform_listener.h>
+#include <tf/transform_broadcaster.h>
+#include <tf/tf.h>
+#include <math.h>
 
 RosHelpers::RosHelpers() {
 
@@ -6,7 +10,57 @@ RosHelpers::RosHelpers() {
 
 RosHelpers::~RosHelpers() {
 }
+void RosHelpers::ConvertWaypointUsingTF(const WayPoint& wp,const tf::Transform& transform, WayPoint& result)
+{
+  // Transform each point from map to front_camera_link
+  tf::Vector3 end_tfv_map(wp.pos_.x_,wp.pos_.y_,wp.pos_.z_);
+  tf::Vector3 out_tfv = transform * end_tfv_map;
 
+
+  // Transform tf:Vector3 to WayPoint
+  //double yaw, pitch, roll;
+  //tf::Quaternion qt(out_tfv.x(),out_tfv.y(),out_tfv.z(),out_tfv.w());
+  //tf::Matrix3x3(qt).getEulerYPR(yaw,pitch,roll);
+
+
+  result.pos_.x_ = out_tfv.getX();
+  result.pos_.y_ = out_tfv.getY();
+  result.pos_.z_ = out_tfv.getZ();
+
+  //result.pos_.a_ = yaw;
+}
+
+void RosHelpers::GetTransformFromWaypoint(const WayPoint& child, tf::Transform& transform)
+{
+  transform.setOrigin( tf::Vector3(child.pos_.x_,child.pos_.y_, 0.0) );
+  tf::Quaternion q;
+  q.setRPY(0, 0, child.pos_.a_);
+  transform.setRotation(q);
+}
+
+void RosHelpers::GetTransformFromTF(const std::string parent_frame, const std::string child_frame, tf::StampedTransform &transform)
+{
+  static tf::TransformListener listener;
+
+  int nFailedCounter = 0;
+  while (1)
+  {
+    try
+    {
+      listener.lookupTransform(parent_frame, child_frame, ros::Time(0), transform);
+      break;
+    }
+    catch (tf::TransformException& ex)
+    {
+      if(nFailedCounter > 2)
+      {
+        ROS_ERROR("%s", ex.what());
+      }
+      ros::Duration(1.0).sleep();
+      nFailedCounter ++;
+    }
+  }
+}
 
 void RosHelpers::ConvertFromPlannerHToAutowareVisualizePathFormat(const std::vector<std::vector<WayPoint> >& globalPaths,
                                                                   const std::string& frame,
@@ -215,8 +269,8 @@ void RosHelpers::ConvertFromLocalPlannerHToAutowareVisualizePathFormat(
 }
 
 void RosHelpers::ConvertFromCubicSplineToVisualizePathFormat(const CubicSplineParams& params,
-                                                          const std::string& frame,
-                                                          visualization_msgs::MarkerArray& markerArray)
+                                                             const std::string& frame,
+                                                             visualization_msgs::MarkerArray& markerArray)
 {
   visualization_msgs::Marker lane_waypoint_marker;
   lane_waypoint_marker.header.frame_id = frame;

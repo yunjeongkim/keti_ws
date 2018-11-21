@@ -180,6 +180,33 @@ keti_local_planning/fast:
 	cd /home/dallddungi/keti_ws/build && $(MAKE) -f keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make keti_local_planning/CMakeFiles/keti_local_planning.dir/build
 .PHONY : keti_local_planning/fast
 
+src/algorithm/lane_change.o: src/algorithm/lane_change.cpp.o
+
+.PHONY : src/algorithm/lane_change.o
+
+# target to build an object file
+src/algorithm/lane_change.cpp.o:
+	cd /home/dallddungi/keti_ws/build && $(MAKE) -f keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.o
+.PHONY : src/algorithm/lane_change.cpp.o
+
+src/algorithm/lane_change.i: src/algorithm/lane_change.cpp.i
+
+.PHONY : src/algorithm/lane_change.i
+
+# target to preprocess a source file
+src/algorithm/lane_change.cpp.i:
+	cd /home/dallddungi/keti_ws/build && $(MAKE) -f keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.i
+.PHONY : src/algorithm/lane_change.cpp.i
+
+src/algorithm/lane_change.s: src/algorithm/lane_change.cpp.s
+
+.PHONY : src/algorithm/lane_change.s
+
+# target to generate assembly for a file
+src/algorithm/lane_change.cpp.s:
+	cd /home/dallddungi/keti_ws/build && $(MAKE) -f keti_local_planning/CMakeFiles/keti_local_planning.dir/build.make keti_local_planning/CMakeFiles/keti_local_planning.dir/src/algorithm/lane_change.cpp.s
+.PHONY : src/algorithm/lane_change.cpp.s
+
 src/cketilocalplanning.o: src/cketilocalplanning.cpp.o
 
 .PHONY : src/cketilocalplanning.o
@@ -410,6 +437,9 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... src/algorithm/lane_change.o"
+	@echo "... src/algorithm/lane_change.i"
+	@echo "... src/algorithm/lane_change.s"
 	@echo "... src/cketilocalplanning.o"
 	@echo "... src/cketilocalplanning.i"
 	@echo "... src/cketilocalplanning.s"

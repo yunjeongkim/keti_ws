@@ -16,7 +16,6 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QCheckBox>
 #include <QtGui/QDockWidget>
-#include <QtGui/QFrame>
 #include <QtGui/QGridLayout>
 #include <QtGui/QGroupBox>
 #include <QtGui/QHBoxLayout>
@@ -27,7 +26,6 @@
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTabWidget>
 #include <QtGui/QVBoxLayout>
@@ -68,9 +66,8 @@ public:
     QDockWidget *dock_status;
     QWidget *dockWidgetContents_2;
     QVBoxLayout *verticalLayout;
-    QFrame *frame;
-    QVBoxLayout *verticalLayout_3;
-    QSpacerItem *verticalSpacer_3;
+    QPushButton *pushButton_left;
+    QPushButton *pushButton_right;
     QPushButton *quit_button;
 
     void setupUi(QMainWindow *MainWindowDesign)
@@ -207,20 +204,15 @@ public:
         dockWidgetContents_2->setObjectName(QString::fromUtf8("dockWidgetContents_2"));
         verticalLayout = new QVBoxLayout(dockWidgetContents_2);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        frame = new QFrame(dockWidgetContents_2);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        sizePolicy1.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
-        frame->setSizePolicy(sizePolicy1);
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        verticalLayout_3 = new QVBoxLayout(frame);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalSpacer_3 = new QSpacerItem(20, 233, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        pushButton_left = new QPushButton(dockWidgetContents_2);
+        pushButton_left->setObjectName(QString::fromUtf8("pushButton_left"));
 
-        verticalLayout_3->addItem(verticalSpacer_3);
+        verticalLayout->addWidget(pushButton_left);
 
+        pushButton_right = new QPushButton(dockWidgetContents_2);
+        pushButton_right->setObjectName(QString::fromUtf8("pushButton_right"));
 
-        verticalLayout->addWidget(frame);
+        verticalLayout->addWidget(pushButton_right);
 
         quit_button = new QPushButton(dockWidgetContents_2);
         quit_button->setObjectName(QString::fromUtf8("quit_button"));
@@ -274,6 +266,8 @@ public:
         tab_manager->setTabText(tab_manager->indexOf(tab_status), QApplication::translate("MainWindowDesign", "Ros Communications", 0, QApplication::UnicodeUTF8));
         menu_File->setTitle(QApplication::translate("MainWindowDesign", "&App", 0, QApplication::UnicodeUTF8));
         dock_status->setWindowTitle(QApplication::translate("MainWindowDesign", "Command Panel", 0, QApplication::UnicodeUTF8));
+        pushButton_left->setText(QApplication::translate("MainWindowDesign", "Left", 0, QApplication::UnicodeUTF8));
+        pushButton_right->setText(QApplication::translate("MainWindowDesign", "Right", 0, QApplication::UnicodeUTF8));
         quit_button->setText(QApplication::translate("MainWindowDesign", "Quit", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/dallddungi/keti_ws/devel/include/prius_msgs/Control.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
 /home/dallddungi/keti_ws/src/coms_commander/include/coms_commander/coms_commander.h
 ros/ros.h
 -

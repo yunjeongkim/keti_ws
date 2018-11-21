@@ -84,6 +84,9 @@ a0f82ab65fbe972b3ae5bd3ad914d662 /home/dallddungi/keti_ws/devel/include/autoware
 50d1118633a46712850ea0a46200802c /home/dallddungi/keti_ws/devel/include/can_msgs/Frame.h
 e6e94bfd5501b7d83fd08432a6f1e71f /home/dallddungi/keti_ws/devel/include/canopen_chain_node/GetObject.h
 74b6e6099aeddfd0036365b48586d3ee /home/dallddungi/keti_ws/devel/include/canopen_chain_node/SetObject.h
+124935cab2187286c0bb5ecea6014f90 /home/dallddungi/keti_ws/devel/include/hector_gazebo_plugins/GNSSConfig.h
+e05d4bc8b8ed7fb560e638dfcdc591ef /home/dallddungi/keti_ws/devel/include/hector_gazebo_plugins/SensorModelConfig.h
+a13d5802f0ef074a1972b4f475600f33 /home/dallddungi/keti_ws/devel/include/hector_gazebo_plugins/SetBias.h
 a31ad02613c86bb271c5ce2db96a6c64 /home/dallddungi/keti_ws/devel/include/keti_msgs/APM.h
 a3e5ddb2ebee863299c982f51bf0b377 /home/dallddungi/keti_ws/devel/include/keti_msgs/ASM.h
 a33c1ffbf6074034aa92b54c8f0db6f0 /home/dallddungi/keti_ws/devel/include/keti_msgs/Misc.h
@@ -191,6 +194,8 @@ e4b56f81f1c24f67fdff9d66e726779d /home/dallddungi/keti_ws/devel/lib/python2.7/di
 9db2a9fe7c12b3e09a74ec227c82fdfd /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/canopen_chain_node/srv/_GetObject.py
 71ac8ad3434fb2111927919e473f93db /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/canopen_chain_node/srv/_SetObject.py
 d9f8aea71bff5fff0d9fdebe1a1922a4 /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/canopen_chain_node/srv/__init__.py
+7a486c8d5a4515deee4d463e32af6c01 /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/_SetBias.py
+b32890dd48c3bc38adc32dfa1b02ff77 /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/hector_gazebo_plugins/srv/__init__.py
 15116eeb9c1f50f710a8816e1f0c56c2 /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/keti_msgs/msg/_APM.py
 06b68e466563a37b877b99fea218f5f7 /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/keti_msgs/msg/_ASM.py
 7fd45594a24a6bc7b306a02a1a68c4bb /home/dallddungi/keti_ws/devel/lib/python2.7/dist-packages/keti_msgs/msg/_Misc.py
@@ -298,6 +303,7 @@ c1a2a0c9ab6224d55885bef310c52fd1 /home/dallddungi/keti_ws/devel/share/common-lis
 24c201e539f7a31ce1d1e5de5600a0db /home/dallddungi/keti_ws/devel/share/common-lisp/ros/can_msgs/msg/Frame.lisp
 9fe7f88a49699c8de3a13c8924323f82 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/canopen_chain_node/srv/GetObject.lisp
 4e4fffee617f9df8bcc57cd100556ec3 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/canopen_chain_node/srv/SetObject.lisp
+e2687e2fbc942cc1da17684d1341b987 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/hector_gazebo_plugins/srv/SetBias.lisp
 8d4a8f1b6bb4230f765d418df9450fe8 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/keti_msgs/msg/APM.lisp
 a079c4e79de26cc025175942f8da4876 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/keti_msgs/msg/ASM.lisp
 71ebb3cda347c39529f9663a04ff8976 /home/dallddungi/keti_ws/devel/share/common-lisp/ros/keti_msgs/msg/Misc.lisp
@@ -402,6 +408,7 @@ f2a84a068115ddef26d1c0a76ca5edcc /home/dallddungi/keti_ws/devel/share/gennodejs/
 a8460796b2a6b0c59566ebcfdeb09f0a /home/dallddungi/keti_ws/devel/share/gennodejs/ros/can_msgs/msg/Frame.js
 925189daa01dece65a90d214579cfef0 /home/dallddungi/keti_ws/devel/share/gennodejs/ros/canopen_chain_node/srv/GetObject.js
 de450355abcf5842e379dd95cdde07df /home/dallddungi/keti_ws/devel/share/gennodejs/ros/canopen_chain_node/srv/SetObject.js
+9830f9347d9e43b509da8d25fd440bfe /home/dallddungi/keti_ws/devel/share/gennodejs/ros/hector_gazebo_plugins/srv/SetBias.js
 bd57f77a62f9fdd2434c265cba60cbeb /home/dallddungi/keti_ws/devel/share/gennodejs/ros/keti_msgs/msg/APM.js
 37278fef91e06e06b500be1cf93757db /home/dallddungi/keti_ws/devel/share/gennodejs/ros/keti_msgs/msg/ASM.js
 92962b03fbc479bf0e8492444d20e96f /home/dallddungi/keti_ws/devel/share/gennodejs/ros/keti_msgs/msg/Misc.js
@@ -509,6 +516,8 @@ d07226170833df63d5dc4ab418c3179f /home/dallddungi/keti_ws/devel/share/roseus/ros
 5a511760cfc8f4bd94769d1c14b4ab8c /home/dallddungi/keti_ws/devel/share/roseus/ros/canopen_chain_node/manifest.l
 151b74928ea002bace8d21918a1c340e /home/dallddungi/keti_ws/devel/share/roseus/ros/canopen_chain_node/srv/GetObject.l
 70e86e44fe4110cdfcc02eb4db24d920 /home/dallddungi/keti_ws/devel/share/roseus/ros/canopen_chain_node/srv/SetObject.l
+61e3fd4286adab98aeb704d426a6faff /home/dallddungi/keti_ws/devel/share/roseus/ros/hector_gazebo_plugins/manifest.l
+32be89ffacc6c58ddee2f2c1888b3a2f /home/dallddungi/keti_ws/devel/share/roseus/ros/hector_gazebo_plugins/srv/SetBias.l
 394d7841e4e4f3746250d706406ed409 /home/dallddungi/keti_ws/devel/share/roseus/ros/keti_msgs/manifest.l
 50c87099280a678c695d7e2fd03637cd /home/dallddungi/keti_ws/devel/share/roseus/ros/keti_msgs/msg/APM.l
 c41aa3b8e66fef41a964581ac3454c57 /home/dallddungi/keti_ws/devel/share/roseus/ros/keti_msgs/msg/ASM.l
@@ -625,6 +634,13 @@ c143e00245aaa5525fd13ce9c0b984f2 autoware_msgs/CMakeFiles/autoware_msgs_generate
 7330974cbe3fd9e0f48f6987cf5539f6 car_demo/prius_msgs/CMakeFiles/prius_msgs_generate_messages_lisp
 7330974cbe3fd9e0f48f6987cf5539f6 car_demo/prius_msgs/CMakeFiles/prius_msgs_generate_messages_nodejs
 7330974cbe3fd9e0f48f6987cf5539f6 car_demo/prius_msgs/CMakeFiles/prius_msgs_generate_messages_py
+963e29793b1c5b9e3749a778b30024d4 hector_gazebo/hector_gazebo_plugins/CMakeFiles/_hector_gazebo_plugins_generate_messages_check_deps_SetBias
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_gencfg
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_generate_messages_cpp
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_generate_messages_eus
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_generate_messages_lisp
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_generate_messages_nodejs
+5f9bd8c9dc44956fd39c1a8ce040f8f9 hector_gazebo/hector_gazebo_plugins/CMakeFiles/hector_gazebo_plugins_generate_messages_py
 87444387a358a9cfe1322a6c0806ece8 keti_controller_widget/include/keti_controller_widget/moc_keti_dispatch.cxx
 7e7be87f125e7269883dbd9ddaf72efe keti_controller_widget/include/keti_controller_widget/moc_keti_util.cxx
 c44fd291d10d82344687fa7328f125fb keti_controller_widget/include/keti_controller_widget/moc_main_window.cxx

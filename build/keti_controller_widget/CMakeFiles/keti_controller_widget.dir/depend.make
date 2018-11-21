@@ -162,7 +162,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_contro
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QButtonGroup
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QCheckBox
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QDockWidget
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QFrame
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QGridLayout
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QGroupBox
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QHBoxLayout
@@ -174,7 +173,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_contro
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QMenuBar
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QPlatformWindow
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QPushButton
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QSpacerItem
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QStatusBar
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QStringListModel
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/include/keti_controller_widget/moc_main_window.cxx.o: /usr/include/qt4/QtGui/QTabWidget
@@ -708,7 +706,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /us
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QDockWidget
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QFileDialog
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QFont
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QFrame
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QGridLayout
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QGroupBox
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QHBoxLayout
@@ -724,7 +721,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /us
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QPlatformWindow
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QPrinter
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QPushButton
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QSpacerItem
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QStatusBar
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QStringListModel
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main.cpp.o: /usr/include/qt4/QtGui/QTabWidget
@@ -1224,7 +1220,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QDockWidget
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QFileDialog
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QFont
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QFrame
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QGridLayout
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QGroupBox
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QHBoxLayout
@@ -1241,7 +1236,6 @@ keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QPlatformWindow
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QPrinter
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QPushButton
-keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QSpacerItem
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QStatusBar
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QStringListModel
 keti_controller_widget/CMakeFiles/keti_controller_widget.dir/src/main_window.cpp.o: /usr/include/qt4/QtGui/QTabWidget

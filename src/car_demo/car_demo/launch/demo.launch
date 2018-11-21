@@ -31,7 +31,7 @@
   <!--
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 3 -y -12 -z 0.5 -model prius"/>
 -->
-<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 41 -y 222 -z 0.0069 -yaw 1.5 -model prius"/>
+<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 40 -y 200 -z 0.0069 -model prius"/>
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 <!--
 <node pkg="local_planner" name="local_planner" type="local_planner">

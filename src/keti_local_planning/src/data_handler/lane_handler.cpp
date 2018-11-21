@@ -53,7 +53,7 @@ void LaneHandler::convertFromLaneToWaypoints(const autoware_msgs::lane& lane, st
 }
 
 void LaneHandler::convertFromWaypointsToLane(const std::vector<WayPoint>& path, const int& iStart,
-                                                         autoware_msgs::lane& trajectory)
+                                             autoware_msgs::lane& trajectory)
 {
   trajectory.waypoints.clear();
   for(unsigned int i=iStart; i < path.size(); i++)
@@ -68,12 +68,6 @@ void LaneHandler::convertFromWaypointsToLane(const std::vector<WayPoint>& path, 
   }
 }
 
-
-/**
- * @brief Find the closest waypoint index on the lane from point
- * @param current_pose
- * @return
- */
 int LaneHandler::getClosestWaypoint(const geometry_msgs::Pose& current_pose)
 {
 
@@ -81,11 +75,11 @@ int LaneHandler::getClosestWaypoint(const geometry_msgs::Pose& current_pose)
     return -1;
 
   // search closest candidate within a certain meter
-  double search_distance = 5.0;
+  double search_distance = 50.0;
   std::vector<int> waypoint_candidates;
   PosePointHandler pp_handler;
 
-  for (unsigned int i = 1; i < waypoints_lane_.size(); i++)
+  for (unsigned int i = 0; i < waypoints_lane_.size(); i++)
   {
     pp_handler.setPosePoint(current_pose,waypoints_lane_.at(i).getPoint());
     if (waypoints_lane_.at(i).getDistance(current_pose.position) > search_distance)
@@ -139,4 +133,48 @@ int LaneHandler::getClosestWaypoint(const geometry_msgs::Pose& current_pose)
   }
 }
 
+int LaneHandler::getFrontWaypoint(const geometry_msgs::Pose& wp, const int num_idx_to_skip)
+{
+  int closest_waypoint = LaneHandler::getClosestWaypoint(wp);
+  return closest_waypoint+num_idx_to_skip;
+}
+
+int LaneHandler::getClosestWaypointNextLane(const std::vector<WayPoint> next_lane_, const int curr_lane_waypoint_idx)
+{
+  if (waypoints_lane_.empty()==true)
+    return -1;
+
+  int waypoint_min = -1;
+  double distance_min = DBL_MAX;
+  geometry_msgs::Point curr_waypoint = waypoints_lane_.at(curr_lane_waypoint_idx).getPoint();
+  for (unsigned int i = 1; i <next_lane_.size(); i++)
+  {
+
+    double d = next_lane_.at(i).getDistance(curr_waypoint);
+    //ROS_INFO("i=%d",i);
+    if (d < distance_min)
+    {
+      waypoint_min = i;
+      distance_min = d;
+    }
+  }
+  return waypoint_min;
+}
+
+
+int LaneHandler::getFrontWaypointByDistance(const geometry_msgs::Pose& wp, const float distance)
+{
+  int closest_waypoint = LaneHandler::getClosestWaypoint(wp);
+  WayPoint cur_wp;
+  float d;
+
+  for(unsigned int i=closest_waypoint; i<waypoints_lane_.size(); i++)
+  {
+    cur_wp = waypoints_lane_.at(i);
+    d = cur_wp.getDistance(wp.position);
+    if(d>distance)
+      return i;
+  }
+  return -1;
+}
 

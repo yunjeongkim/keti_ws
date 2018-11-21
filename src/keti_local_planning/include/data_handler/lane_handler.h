@@ -34,6 +34,17 @@ public:
   int getClosestWaypoint(const geometry_msgs::Pose& wp);
   //void convertFromWaypointsToArray(Array<double>& x_set,Array<double>& y_set);
 
+  /**
+   * @brief getFrontWaypoint
+   * @param wp
+   * @return index of the front waypoint on the lane
+   */
+  int getFrontWaypoint(const geometry_msgs::Pose& wp, const int num_idx_to_skip);
+  int getFrontWaypointByDistance(const geometry_msgs::Pose& wp, const float distance);
+
+
+  int getClosestWaypointNextLane(const std::vector<WayPoint> next_lane_, const int curr_lane_waypoint_idx);
+
 protected:
   void convertFromLaneToWaypoints(const autoware_msgs::lane& lane, std::vector<WayPoint>& path);
   void convertFromWaypointsToLane(const std::vector<WayPoint>& path, const int& iStart,

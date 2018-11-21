@@ -2,6 +2,7 @@
 #define WAYPOINT_H
 #include "data_classes/gpspoint.h"
 #include "geometry_msgs/Pose.h"
+#include "tf/tf.h"
 /**
  * @brief type representing class containing (GPSPoint, v)
  * \ingroup DataGroup
@@ -12,6 +13,7 @@ class WayPoint
 public:
   GPSPoint	pos_;
   double  	v_;
+  //geometry_msgs::Pose pos_;
   WayPoint()
   {
 
@@ -37,7 +39,7 @@ public:
     pos_.a_ = a;
     v_ = v;
   }
-  geometry_msgs::Point getPoint()
+  geometry_msgs::Point getPoint() const
   {
     geometry_msgs::Point pt;
     pt.x = pos_.x_;
@@ -46,9 +48,18 @@ public:
     return pt;
   }
 
-  double getDistance(geometry_msgs::Point point)
+  double getDistance(const geometry_msgs::Point point) const
   {
     return sqrt(pow(point.x-pos_.x_,2)+pow(point.y-pos_.y_,2)+pow(point.z-pos_.z_,2));
+  }
+  geometry_msgs::Pose getPose()
+  {
+    geometry_msgs::Pose pose;
+    pose.position.x = pos_.x_;
+    pose.position.y = pos_.y_;
+    pose.position.z = pos_.z_;
+    pose.orientation = tf::createQuaternionMsgFromYaw(pos_.a_);
+    return pose;
   }
 
 };

@@ -29,6 +29,7 @@ protected:
 
   geometry_msgs::Pose current_pose_;
   LaneArrayHandler lanes_handler_;
+  bool bInitPose;
 
   /**
    * @brief callbackGetCurrentPose

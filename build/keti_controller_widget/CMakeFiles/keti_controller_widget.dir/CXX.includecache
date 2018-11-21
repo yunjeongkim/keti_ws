@@ -2510,10 +2510,6 @@ qfiledialog.h
 qfont.h
 /usr/include/qt4/QtGui/qfont.h
 
-/usr/include/qt4/QtGui/QFrame
-qframe.h
-/usr/include/qt4/QtGui/qframe.h
-
 /usr/include/qt4/QtGui/QGridLayout
 qgridlayout.h
 /usr/include/qt4/QtGui/qgridlayout.h
@@ -2577,10 +2573,6 @@ qprinter.h
 /usr/include/qt4/QtGui/QPushButton
 qpushbutton.h
 /usr/include/qt4/QtGui/qpushbutton.h
-
-/usr/include/qt4/QtGui/QSpacerItem
-qlayoutitem.h
-/usr/include/qt4/QtGui/qlayoutitem.h
 
 /usr/include/qt4/QtGui/QStatusBar
 qstatusbar.h
@@ -4873,8 +4865,6 @@ QtGui/QCheckBox
 -
 QtGui/QDockWidget
 -
-QtGui/QFrame
--
 QtGui/QGridLayout
 -
 QtGui/QGroupBox
@@ -4894,8 +4884,6 @@ QtGui/QMenu
 QtGui/QMenuBar
 -
 QtGui/QPushButton
--
-QtGui/QSpacerItem
 -
 QtGui/QStatusBar
 -
